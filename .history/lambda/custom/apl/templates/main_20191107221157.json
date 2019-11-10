@@ -1,0 +1,39 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "height": "100%",
+                "width": "100%",
+                "paddingTop": "16dp",
+                "paddingLeft": "16dp",
+                "paddingRight": "16dp",
+                "paddingBottom": "16dp",
+                "items": [
+                    {
+                        "type": "Video",
+                        "width": "300dp",
+                        "height": "200dp",
+                        "source": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/New+video+3.mp4",
+                        "scale": "best-fill"
+                    }
+                ]
+            }
+        ]
+    }
+}

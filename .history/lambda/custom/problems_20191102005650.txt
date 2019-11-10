@@ -1,0 +1,2 @@
+1st time, open skill, provide wrong answer, answer yes or no to replay level
+1st time, open skill, provide correct answer, go to next lebvel - intro is played

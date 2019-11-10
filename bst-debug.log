@@ -1,0 +1,326 @@
+2019-08-29T20:02:35.217Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:02:35.228Z error: bst-test            Error: ENOENT: no such file or directory, open './models/en-GB.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:44:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+2019-08-29T20:22:01.374Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:22:01.383Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:22:05.014Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:22:05.018Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:22:21.685Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:22:21.695Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:23:56.701Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:23:56.710Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:25:41.645Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:25:41.655Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:27:03.282Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:27:03.292Z error: bst-test            Error: Cannot find module '/home/hector/skills/CircleOfFifths/lambda/custom/_index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:27:03.797Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:27:03.801Z error: bst-test            Error: Cannot find module '/home/hector/skills/CircleOfFifths/lambda/custom/_index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:27:04.240Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:27:04.244Z error: bst-test            Error: Cannot find module '/home/hector/skills/CircleOfFifths/lambda/custom/_index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:27:04.803Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:27:04.808Z error: bst-test            Error: Cannot find module '/home/hector/skills/CircleOfFifths/lambda/custom/_index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:27:05.024Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:27:05.029Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:35:24.486Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:35:24.500Z error: bst-test            Error: Cannot find module '/home/hector/skills/lambda/custom/index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:35:25.024Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:35:25.029Z error: bst-test            Error: Cannot find module '/home/hector/skills/lambda/custom/index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:35:25.476Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:35:25.480Z error: bst-test            Error: Cannot find module '/home/hector/skills/lambda/custom/index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:35:26.042Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:35:26.046Z error: bst-test            Error: Cannot find module '/home/hector/skills/lambda/custom/index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T20:35:26.272Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:35:26.276Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 6, column 42:
+     ... equest: "Welcome to the skill *""
+                                         ^
+    at generateError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/usr/local/lib/node_modules/bespoken-tools/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:454:21)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-08-29T20:41:14.875Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T20:41:14.885Z error: bst-test            Error: Cannot find module '/home/hector/skills/lambda/custom/index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:230:17)
+    at Resolver._getVirtualMockPath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:361:14)
+    at Resolver._getAbsolutePath (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:347:14)
+    at Resolver.getModuleID (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:319:31)
+    at Runtime._shouldMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:943:37)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-29T21:01:21.828Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:01:21.838Z error: bst-test            Error: ENOENT: no such file or directory, open './models/en-GB.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:44:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+2019-08-29T21:03:41.756Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:03:41.767Z error: bst-test            Error: ENOENT: no such file or directory, open './models/en-GB.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:44:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+2019-08-29T21:05:07.703Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:05:07.713Z error: bst-test            Error: ENOENT: no such file or directory, open './models/en-GB.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:44:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+2019-08-29T21:11:52.952Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:11:52.962Z error: bst-test            Error: ENOENT: no such file or directory, open 'test/models/en-GB.json'
+    at Object.fs.openSync (fs.js:646:18)
+    at Object.fs.readFileSync (fs.js:551:33)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:44:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/local/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+2019-08-29T21:19:00.440Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:19:00.583Z error: bst-test            ReferenceError: VirtualAlexa is not defined
+    at Object.VirtualAlexa (/home/hector/skills/CircleOfFifths/lambda/custom/index.js:22:22)
+    at Runtime._execModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:598:21)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+2019-08-29T21:20:10.276Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:20:10.417Z error: bst-test            ReferenceError: VirtualAlexa is not defined
+    at Object.VirtualAlexa (/home/hector/skills/CircleOfFifths/lambda/custom/index.js:1315:26)
+    at Runtime._execModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:598:21)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+2019-08-29T21:20:50.487Z error: bst-test            Error using bst-test on Node: v8.10.0
+2019-08-29T21:20:50.669Z error: bst-test            ReferenceError: VirtualAlexa is not defined
+    at Object.VirtualAlexa (/home/hector/skills/CircleOfFifths/lambda/custom/index.js:22:22)
+    at Runtime._execModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/usr/local/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:598:21)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/usr/local/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+2019-08-31T21:46:57.375Z error: bst-test            Error using bst-test on Node: v10.16.3
+2019-08-31T21:46:57.381Z error: bst-test            Error: Cannot find module '/mnt/d/lambda/custom/index.js' from 'ModuleInvoker.js'
+    at Resolver.resolveModule (/usr/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:259:17)
+    at Resolver._getVirtualMockPath (/usr/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:390:14)
+    at Resolver._getAbsolutePath (/usr/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:376:14)
+    at Resolver.getModuleID (/usr/lib/node_modules/bespoken-tools/node_modules/jest-resolve/build/index.js:348:31)
+    at Runtime._shouldMock (/usr/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:942:37)
+    at Runtime.requireModuleOrMock (/usr/lib/node_modules/bespoken-tools/node_modules/jest-runtime/build/index.js:595:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/usr/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:17:29)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/usr/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/usr/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/usr/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+2019-08-31T21:51:06.784Z error: bst-test            Error using bst-test on Node: v10.16.3
+2019-08-31T21:51:06.789Z error: bst-test            Error: ENOENT: no such file or directory, open 'test/models/en-GB.json'
+    at Object.openSync (fs.js:443:3)
+    at Object.readFileSync (fs.js:343:35)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/usr/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:44:23)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/usr/lib/node_modules/bespoken-tools/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/usr/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/usr/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/usr/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/usr/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /usr/lib/node_modules/bespoken-tools/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364

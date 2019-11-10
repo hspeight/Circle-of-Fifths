@@ -1,0 +1,27 @@
+Update skill.json ready for submission
+add languages English (AU), English (CA), English (IN), English (US)
+Review all help messages
+add one second pause after superlative. (maybe)
+Try and get alexa to enunciate the key properly especially in ones such as 'what is A the 4th of'
+move image assets out of index.json
+only include image assets if device has a display
+Cloudwatch alarms
+
+Deploy to multipole endpoints
+https://developer.amazon.com/docs/custom-skills/develop-skills-in-multiple-languages.html
+
+
+App card tests
+Alexa full game // works
+Alexa part game // works
+Echo show voice only full game // works
+Echo show touch only full game // cannot get card to show, maybe an alexa bug
+Echo show voice & touch full game // works if last answer is voice
+Echo show voice only part game // works
+Echo show touch only part game // works
+Echo show voice & touch part game // works
+
+Testing
+test non en-gb welcome message
+test en-gb for morning & afternoon message
+

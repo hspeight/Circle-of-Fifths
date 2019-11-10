@@ -1,0 +1,201 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.0.0"
+        }
+    ],
+    "resources": [
+        {
+            "description": "Colors dark to light",
+            "colors": {
+                "myBlack": "#343838",
+                "myPurple": "#9C0A54",
+                "myRed": "#FC2D47",
+                "myOrange": "#FD704B",
+                "myYellow": "#FDB04F",
+                "myWhite": "#FFFFFF"
+            }
+        },
+        {
+            "description": "Stock color for the light theme",
+            "colors": {
+                "colorTextPrimary": "#151920"
+                
+            }
+        },
+        {
+            "description": "Stock color for the dark theme",
+            "when": "${viewport.theme == 'dark'}",
+            "colors": {
+                "colorTextPrimary": "#f0f1ef"
+            }
+        },
+        {
+            "description": "Standard font sizes",
+            "dimensions": {
+                "textSizeBody": 48,
+                "textSizePrimary": 27,
+                "textSizeSecondary": 23,
+                "textSizeSecondaryHint": 25
+            }
+        },
+        {
+            "description": "Common spacing values",
+            "dimensions": {
+                "spacingThin": 6,
+                "spacingSmall": 12,
+                "spacingMedium": 24,
+                "spacingLarge": 48,
+                "spacingExtraLarge": 72
+            }
+        },
+        {
+            "description": "Common margins and padding",
+            "dimensions": {
+                "marginTop": 40,
+                "marginLeft": 60,
+                "marginRight": 60,
+                "marginBottom": 40
+            }
+        }
+    ],
+    "styles": {
+        "textStyleBase": {
+            "description": "Base font description; set color",
+            "values": [
+                {
+                    "color": "@colorTextPrimary"
+                }
+            ]
+        },
+        "textStyleBase0": {
+            "description": "Thin version of basic font",
+            "extend": "textStyleBase",
+            "values": {
+                "fontWeight": "100"
+            }
+        },
+        "textStyleBase1": {
+            "description": "Light version of basic font",
+            "extend": "textStyleBase",
+            "values": {
+                "fontWeight": "300"
+            }
+        },
+        "mixinBody": {
+            "values": {
+                "fontSize": "@textSizeBody"
+            }
+        },
+        "mixinPrimary": {
+            "values": {
+                "fontSize": "@textSizePrimary"
+            }
+        },
+        "mixinSecondary": {
+            "values": {
+                "fontSize": "@textSizeSecondary"
+            }
+        },
+        "textStylePrimary": {
+            "extend": [
+                "textStyleBase1",
+                "mixinPrimary"
+            ]
+        },
+        "textStyleSecondary": {
+            "extend": [
+                "textStyleBase0",
+                "mixinSecondary"
+            ]
+        },
+        "textStyleBody": {
+            "extend": [
+                "textStyleBase1",
+                "mixinBody"
+            ]
+        },
+        "textStyleSecondaryHint": {
+            "values": {
+                "fontFamily": "Bookerly",
+                "fontStyle": "italic",
+                "fontSize": "@textSizeSecondaryHint",
+                "color": "@colorTextPrimary"
+            }
+        }
+    },
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "when": "${viewport.shape == 'round'}",
+                "type": "Container",
+                "direction": "column",
+                "items": [
+
+         
+                    {
+                        "type": "Container",
+                        "grow": 1,
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "source": "${payload.bodyTemplate7Data.image.sources[0].url}",
+                                "scale": "best-fill",
+                                "width": "90vw",
+                                "height": "90vh",
+                                "align": "center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Container",
+                "height": "80vh",
+                "width": "100vw",
+                "items": [
+                    
+                   
+                
+                    {
+                        "type": "Container",
+                        "direction": "row",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "text": "Circle of Fifths",
+                                "color": "@myYellow",
+                                "fontWeight": "900",
+                                "width": "40vw",
+                                "height": "80vh",
+                                "fontSize": "14vh",
+                                "paddingLeft": "5vw",
+                                "textAlignVertical": "center"
+                            },
+                            {
+                                "type": "Image",
+                                "height": "80vh",
+                                "width": "70vw",
+                                "source": "${payload.bodyTemplate7Data.image.sources[1].url}",
+                                "scale": "best-fit",
+                                "align": "center"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

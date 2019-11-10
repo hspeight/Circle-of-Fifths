@@ -1,0 +1,15 @@
+open gimp
+open COF_small_no_centre_text_2_titles.xcf
+Select curved text layer then edit > cut
+Script-Fu > Animation > Rotation Animation
+Rotate times: 24
+Motion: circular
+Edit > Paste as > New Layer
+Create a new layer group
+Move curved text and original layer into group
+Filters > Animation > Playback
+Playback speed: 0.25
+Frame rate: 10 fps
+
+Recording
+--------------

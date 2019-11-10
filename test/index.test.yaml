@@ -1,0 +1,7 @@
+---
+configuration:
+  locales: en-GB
+
+---
+- test: Launch the Circle of Fifths skill
+- LaunchRequest: 'Welcome to the skill *'

@@ -1,0 +1,28 @@
+Update skill.json ready for submission
+add languages English (AU), English (CA), English (IN), English (US)
+Add a sample question to the help
+Review all help messages
+add one second pause after superlative.
+Cloudwatch alarms
+
+Validation
+Run
+6 Fixes Required
+English (US)
+A Detailed Description of the skill is missing for the en_US locale. In the Distribution tab, go to Skill Preview for en_US to add a detailed description.
+A Small Skill Icon is missing for the en_US locale. In the Distribution tab, go to Skill Preview for en_US to add a small skill icon.
+A Large Skill Icon is missing for the en_US locale. In the Distribution tab, go to Skill Preview for en_US to add a large skill icon.
+A One Sentence Description of the skill is missing for the en_US locale. In the Distribution tab, go to Skill Preview for en_US to add the skill description.
+An Example Phrase is missing for the en_US locale. In the Distribution tab, go to Skill Preview for en_US to add example phrases.
+[en_US] Required: Provide at least 1 example phrase
+
+
+App card tests
+Alexa full game // works
+Alexa part game // works
+Echo show voice only full game // works
+Echo show touch only full game // cannot get card to show, maybe an alexa bug
+Echo show voice & touch full game // works if last answer is voice
+Echo show voice only part game // works
+Echo show touch only part game // works
+Echo show voice & touch part game // works

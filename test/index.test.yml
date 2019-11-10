@@ -1,0 +1,7 @@
+---
+configuration:
+  dynamo: mock
+  userId: MyUserID
+---
+- test: Launch the Circle of Fifths skill
+- LaunchRequest: "Welcome to the skill "

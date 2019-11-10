@@ -1,0 +1,21 @@
+potty slot is type searchquery deliberately to help get the correct productId in BuyPackIntentHandler
+
+Issues
+open circle of fifths for cake - this invocation causes an error
+
+
+Testing
+Test all speech output and reporompts
+
+If a user speaks to Alexa, then Alexa should respond with voice. If a user touches the screen, then Alexa should not respond with voice.
+https://github.com/alexa-labs/skill-sample-nodejs-space-explorer
+
+Sone addtional pack ideas
+https://www.youtube.com/watch?v=b9X3SDZjkh8
+
+Vary the questions along these lines
+https://www.proprofs.com/quiz-school/story.php?title=circle-fifths
+
+Add a Sample Interaction along these lines
+https://www.amazon.co.uk/Amazon-Cleo/dp/B01N5QDE0Y?ref_=pe_3080231_411505181
+

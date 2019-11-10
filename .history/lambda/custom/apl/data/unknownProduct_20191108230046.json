@@ -1,0 +1,21 @@
+{
+    "unknownProductData": {
+        "type": "object",
+        "objectId": "unknownProd",
+        "title": "The circle of fifths",
+        "backgroundImage": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+
+                
+            ]
+        },
+        "text": {
+            "title": "Unknown Product"
+        },
+    
+        "hintText": "Try, \"Alexa, what can I play\""
+    }
+}

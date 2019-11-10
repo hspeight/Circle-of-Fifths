@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "type": "ENTITLEMENT",
+  "referenceName": "key_signatures",
+  "publishingInformation": {
+    "locales": {
+      "en-US": {
+        "name": "Key Signatures",
+        "summary": "The key signature tests will help you learn the number of sharps and flats belonging to each key.",
+        "description": "There are three variations of this test. For a given key you will be asked to say how many sharps or flats it contains. Given the number of sharps or flats yo will be asked to name the key",
+        "smallIconUri": "https://s3-eu-west-1.amazonaws.com/circle-of-fifths/small_icon.png",
+        "largeIconUri": "https://s3-eu-west-1.amazonaws.com/circle-of-fifths/large_icon.png",
+        "examplePhrases": [
+          "Alexa, buy key signatures Or Alexa, playkey signatures"
+        ],
+        "keywords": [
+          "buy key signatures"
+        ],
+        "customProductPrompts": {
+          "purchasePromptDescription": "The key signatures gives three variations of tests",
+          "boughtCardDescription": "Thanks for purchasing key signatures. You now have access to the key signature tests!"
+        }
+      }
+    },
+    "distributionCountries": [
+      "US"
+    ],
+    "pricing": {
+      "amazon.com": {
+        "releaseDate": "2018-12-01T00:00Z",
+        "defaultPriceListing": {
+          "price": 0.99,
+          "currency": "USD"
+        }
+      }
+    },
+    "taxInformation": {
+      "category": "SOFTWARE"
+    }
+  },
+  "privacyAndCompliance": {
+    "locales": {
+      "en-US": {
+        "privacyPolicyUrl": "http://www.myprivacypolicy.sampleskill.com"
+      }
+    }
+  },
+  "testingInstructions": "TODO: REPLACE THIS WITH TESTING INSTRUCTIONS FOR THE CERTIFICATION TEAM SO THEY KNOW HOW TO PURCHASE AND USE THIS PRODUCT",
+  "purchasableState": "PURCHASABLE"
+}

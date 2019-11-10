@@ -1,0 +1,24 @@
+add a sound clip with the spinning circle at start up
+add a function that will describe each round before the start
+update database on round/drill completion
+add refund code
+make user include the word major or minor answer
+redo help text
+db updates
+dont upsell if there are no more purchasable products
+add a repeat handler
+don't exit if user says no to next drill offer
+
+Tests
+    purchase accepted
+    purchase declined
+    purchase refund
+    purhase already owned
+    test utterances on a device for accuracy. e.g. make sure the slot value is correct for c,d,e,g utterances 
+  provide examples and resources in certification test notes
+DynamoDB
+    Regular backups
+
+Satisfy certification
+    https://alexa.design/isp-cert
+    

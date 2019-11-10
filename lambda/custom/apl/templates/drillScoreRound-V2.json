@@ -1,0 +1,80 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "width": "100%",
+                "height": "100%",
+                "items": [
+                    {
+                        "type": "AlexaBackground",
+                        "backgroundImageSource": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/cof2.png",
+                        "coverOverlay": true
+                    },
+                    {
+                        "type": "AlexaHeader",
+                        "headerBackButton": true,
+                        "headerBackButtonAccessibilityLabel": "back",
+                        "headerBackgroundColor": "transparent",
+                        "headerTitle": "Header title",
+                        "headerSubtitle": "Header subtitle",
+                        "headerAttributionText": "Attribution",
+                        "headerAttributionImage": "https://d2o906d8ln7ui1.cloudfront.net/images/cheeseskillicon.png",
+                        "headerAttributionPrimacy": true,
+                        "headerDivider": false
+                    },
+                    {
+                        "type": "Text",
+                        "textAlign": "center",
+                        "color": "#9900ff",
+                        "fontFamily": "serif, times new roman, times, georgia",
+                        "text": "Level 2",
+                        "fontWeight": "600",
+                        "top": "60"
+                    },
+                    {
+                        "type": "Text",
+                        "textAlign": "center",
+                        "color": "#9900ff",
+                        "fontFamily": "serif, times new roman, times, georgia",
+                        "text": "Question 5",
+                        "top": "80"
+                    },
+                    {
+                        "type": "Text",
+                        "textAlign": "center",
+                        "color": "#9900ff",
+                        "fontFamily": "serif, times new roman, times, georgia",
+                        "fontSize": "40",
+                                                "fontWeight": "600",
+                        "text": "Order of sharps & flats",
+                        "top": "-110"
+                    },
+                    {
+                        "type": "Text",
+                        "textAlign": "center",
+                        "color": "#9900ff",
+                        "fontFamily": "serif, times new roman, times, georgia",
+                        "text": "x/y",
+                        "top": "50"
+                    }
+                ]
+            }
+        ]
+    }
+}

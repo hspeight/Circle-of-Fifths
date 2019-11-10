@@ -1,0 +1,16 @@
+{
+    "perfect-intervals": {
+        "name": "Perfect Intervals",
+        "levels": [{
+                "key": "fifth",
+                "data": ["A FLAT MAJOR"]
+            },
+
+            {
+                "key": "fourth",
+                "data": ["E MAJOR"]
+            }
+
+        ]
+    }
+}

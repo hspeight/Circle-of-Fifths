@@ -1,0 +1,71 @@
+const constants = require('../lambda/custom/constants');
+const util = require('../lambda/custom/utils');
+const drills = constants.drills;
+
+var attributes = {
+    currentDrill: 2,
+    currentLevel: 1,
+    drillStatus: {
+        'perfect-intervals': {
+            level: 1,
+            completed: false
+        },
+    }
+}
+
+var myProp = 'perfect-intervals_';
+//var myProp = 'relative-keys';
+
+var drill = new Object();
+drill.ref = 'drillref1';
+drill.level = 3;
+drill.completed = false;
+console.log(drill);
+console.log('--------------------');
+if (!drill.ref.hasOwnProperty(myProp)) {
+    //console.log("No i do not, i have that property");
+    drill.ref = myProp;
+    drill.level = 7;
+    drill.completed = true;
+//    attributes.drillStatus[myProp]['level'] = 5;
+    //attributes.drillStatus[myProp].level = 0;
+    //console.log(attributes.drillStatus[myProp]);
+}
+console.log(drill);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    // Check if the drill/level we are about to set up is in the drillstatus array and if not push it on.
+if (attributes.drillStatus.filter(function (drill) {
+    return drill.drill.ref === attributes.currentDrillRef
+}).length === 0) {
+console.log('PPPPUUUSSSHHHIIINNGGG ' + attributes.currentDrillRef);
+// didn't find the drill in the drill status array so add it
+attributes.drillStatus.push({
+    "drill": {
+        "ref": attributes.currentDrillRef,
+        "level": 0,
+        "completed": false
+    }
+});
+}
+
+attributes.drillStatus["perfect-intervals"] = 8;
+
+console.log(attributes);
+
+*/

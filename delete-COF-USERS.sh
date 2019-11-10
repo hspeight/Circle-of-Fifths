@@ -1,0 +1,1 @@
+aws dynamodb delete-item --table-name COF-USERS --key file://key.json

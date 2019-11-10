@@ -1,0 +1,82 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "dark",
+    "import": [{
+        "name": "alexa-layouts",
+        "version": "1.1.0"
+    }],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [{
+            "type": "Frame",
+            "height": "100vh",
+            "width": "100vw",
+            "backgroundColor": "#58ACFA",
+            "items": [{
+                    "when": "${@viewportProfile == @hubRoundSmall}",
+                    "type": "Container",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "items": [{
+                        "when": "${payload.bodyTemplate7Data.video.type == intro}",
+                        "type": "AlexaBackground",
+                        "backgroundVideoSource": [{
+                            "url": "${payload.bodyTemplate7Data.video.sources[0].url}",
+                            "repeatCount": 0
+                        }],
+                        "videoAutoPlay": true
+                    },
+                {
+                    "when": "${{payload.bodyTemplate7Data.video.type == outro}",
+                        "type": "AlexaBackground",
+                        "backgroundVideoSource": [{
+                            "url": "${payload.bodyTemplate7Data.video.sources[1].url}",
+                            "repeatCount": 0
+                        }],
+                        "videoAutoPlay": true
+                }]
+                },
+                {
+                    "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                    "type": "Container",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "items": [{
+                            "type": "Text",
+                            "fontSize": "6vw",
+                            "text": "Hello World!!",
+                            "fontWeight": "900",
+                            "position": "absolute",
+                            "left": "5vh",
+                            "top": "2vh"
+                        },
+                        {
+                            "type": "Image",
+                            "source": "https://dl.dropbox.com/s/ws3p9ckm2voekdl/helloWorld.png?dl=0",
+                            "height": "90vh",
+                            "width": "100vw",
+                            "position": "absolute",
+                            "left": "35vh",
+                            "top": "12vh"
+                        },
+                        {
+                            "type": "Text",
+                            "text": "Here is some text used just on larger screens and there is more room to play with!",
+                            "position": "absolute",
+                            "left": "5vh",
+                            "right": "55vw",
+                            "top": "15vh",
+                            "fontSize": "5vw"
+                        }
+                    ]
+                }
+            ]
+        }]
+    }
+}

@@ -1,0 +1,27 @@
+Update skill.json ready for submission
+add languages English (AU), English (CA), English (IN), English (US)
+Review all help messages
+add one second pause after superlative.
+Try and get alexa to enunciate the key properly especially in ones such as 'what is A the 4th of'
+Cloudwatch alarms
+
+Validation
+Run
+Required Fixes
+Royalty Tax Identity Interview has not been completed for the vendor of this monetized skill. Either complete the Royalty Tax Identity Interview on developer.amazon.com or disassociate all in-skill products from this skill.
+Payment Information has not been entered for the vendor of this monetized skill. Either enter your Payment Information on developer.amazon.com or disassociate all in-skill products from this skill.
+English (UK)
+The privacy policy URL is missing for the en_GB locale. The privacy policy URL is required for skills that collect user information (e.g. account linking). In the Distribution tab, go to Skill Preview for en_GB to add the privacy policy URL.
+English (US)
+The privacy policy URL is missing for the en_US locale. The privacy policy URL is required for skills that collect user information (e.g. account linking). In the Distribution tab, go to Skill Preview for en_US to add the privacy policy URL.
+
+
+App card tests
+Alexa full game // works
+Alexa part game // works
+Echo show voice only full game // works
+Echo show touch only full game // cannot get card to show, maybe an alexa bug
+Echo show voice & touch full game // works if last answer is voice
+Echo show voice only part game // works
+Echo show touch only part game // works
+Echo show voice & touch part game // works

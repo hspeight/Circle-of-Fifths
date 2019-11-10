@@ -1,0 +1,889 @@
+----User Says Start----
+User Says: open circle of fifths
+----User Says End----
+
+-----Considered Intents Start----
+Considered Intents: [
+  {
+    "name": "<LaunchRequest>"
+  }
+]
+-----Considered Intents End----
+
+----Json Input Start----
+Json Input: {
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.ea84f76a-0a59-4e1a-a320-4388d3291f9d",
+    "application": {
+      "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+    }
+  },
+  "context": {
+    "Display": {},
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AGVYRG7NVW46LBWB2EFHOBEAP5QD3Z7PYZX5GET462EDJ65Z5MJKBIDWDKJ6E3HM3WWVMUE2H5WIHL2LXI3T4XLALBX2IIUUIVCL777WVUES4D74YNNTKO7RCNMFPME5E4W3542MJ2JKQQUU3N6JJHSPAC23FBRQN2OSEEQPLIVLNPZ5EKFZM",
+        "supportedInterfaces": {
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.eu.amazonalexa.com",
+      "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjk5Y2ZjM2UyLTdlZWEtNGM5My1hOTUzLWMzM2QwNTI3YTk0MSIsImV4cCI6MTU2NzYxMTUxNywiaWF0IjoxNTY3NjExMjE3LCJuYmYiOjE1Njc2MTEyMTcsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFEcmNBMEZ0MVVoMGRuQVh5Q2xIUVRsS3dFQUFBQUFBQURzNFJxVHB6UFZyaFkyNXp2Ty9uT1FMaCt5akdHd3FMdnUzQUEwL21QTlRES3VGY2pyVGlsTVJtL1pvbG4yNkhWbmhHYnZiV3phbjN0VmFRWVNzVmdLUEM2QndYMjJ0WUxjN3hQS3o2bHJIZ0FLL3JoZWxSZXZ0TDZoNkozWStLTTFYSXIwaGlmeDFDVU8zMVgvb1o0RzZuVWFRZ2RZWStLRGJpT3cvNGxQWGp0ZUhnZERoY093ZWZ2cGFDNlYzT05MTlhjR3dhWGZ5TWk3UHBPcmNJd2lVQUtQeWM1SC9hd1hKbHFIcjhnaFFLTDRWL29QRDNHVXliUm9Id3RQOXplc0hLY1N6N2VPS3RRRW9taytPM1JQVFl6TTVDeXIwclEzU0JzMk9XNWlhQU14WjdVelM3Z2tLTnRtbjI2eU9jWFFwWUhDR3hWRDJ4M2FlK3BYVXhoaEJhbm9TL04xakJEOWpROXR2M2hPMWt5elVjK2hPeDhvV2J6SjgwRzJIYkV0VDRxL2NxZVlNMUMxVXc9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHVllSRzdOVlc0NkxCV0IyRUZIT0JFQVA1UUQzWjdQWVpYNUdFVDQ2MkVESjY1WjVNSktCSURXREtKNkUzSE0zV1dWTVVFMkg1V0lITDJMWEkzVDRYTEFMQlgySUlVVUlWQ0w3NzdXVlVFUzRENzRZTk5US083UkNOTUZQTUU1RTRXMzU0Mk1KMkpLUVFVVTNONkpKSFNQQUMyM0ZCUlFOMk9TRUVRUExJVkxOUFo1RUtGWk0iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRURXVkJNVFZESDRITUdUVVVCMlRPWTdaSFNWQ0UzUEFHVUFJUFNTQkxDRkQzRzJGN1BZNlpCS1dYNE1CTldOQ1ZJRllFUzdFWE5UTERQQUpNRk1FV0RDUFQ1UEhKSlJDNVJXWUFOQ1RYVzdRUkFDQVY1Q0Y1WlI2SUREWUI3RU5PQktZU1JVUkFINkZPNk5USEVLTkQ1NUJLM0JWNkxMUTdGVTdZMkRKVzZYRUVDSFVQRFVLUlRINFJYVVJCQ0o1M1lOWU1QVkxKVjJZSkEifX0.Uuti8WnIT43cLY1sR4RRZSvV9rh_fjNzYC7_BO58mMx3Sk9-EXdIa80zaUZuvGHF1owuWlPDd19LiYWCrCinqhHrFiNc2pRoAtAZfj8berAisT0r5PAymLcoPkrJmiFTtvka0EKPwKEhEYqF2QUpV7tNGwoyn8rUStjiRsAUNecG3AkH5ZlOa8VqyB35EGl3sIW30DaYy3GTvmK7dt0xjsCdHZyadcTqiKD7KaiUB7-S1KjVbqPy_QGiyDPjaakGhIOGsbuASDpQ0QmUvtFk_c23Bc3uuSYTc4DZquMr8Yf-BnFpHJ7GnbwR8hBmsjp2LQjuvshfN9PDvI7qG0ANNw"
+    }
+  },
+  "request": {
+    "type": "LaunchRequest",
+    "requestId": "amzn1.echo-api.request.69a5c21d-aae2-42ce-b6e6-21de79736a1f",
+    "timestamp": "2019-09-04T15:33:37Z",
+    "locale": "en-GB",
+    "shouldLinkResultBeReturned": false
+  }
+}
+----Json Input End----
+
+----Json Output Start----
+Json Output: {
+  "body": {
+    "version": "1.0",
+    "response": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>Welcome back to Circle of fifths . This is the Perfect Intervals drill, and you are on level 1. If you're ready let's go! Question 1. what is the fifth of E FLAT MAJOR ?</speak>"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "type": "SSML",
+          "ssml": "<speak></speak>"
+        }
+      },
+      "shouldEndSession": false,
+      "type": "_DEFAULT_RESPONSE"
+    },
+    "sessionAttributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 1,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_STARTLEVEL",
+      "currentDrillIndex": 0,
+      "drillStatusIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "questionNum": 1,
+      "levelScore": 0,
+      "currentDrillName": "Perfect Intervals",
+      "currentDrillRef": "perfect-intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611152000
+    },
+    "userAgent": "ask-node/2.6.0 Node/v10.16.3"
+  }
+}
+----Json Output End----
+
+----Alexa Responds Start----
+Alexa Responds: Welcome back to Circle of fifths . This is the Perfect Intervals drill, and you are on level 1. If you're ready let's go! Question 1. what is the fifth of E FLAT MAJOR ?
+----Alexa Responds End----
+
+----User Says Start----
+User Says: b flat major
+----User Says End----
+
+-----Considered Intents Start----
+Considered Intents: [
+  {
+    "name": "AnswerIntent",
+    "confirmationStatus": "NONE",
+    "slots": {
+      "ANSWER": {
+        "name": "ANSWER",
+        "value": "b flat major",
+        "resolutions": {
+          "resolutionsPerAuthority": [
+            {
+              "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.KEYS",
+              "status": {
+                "code": "ER_SUCCESS_MATCH"
+              },
+              "values": [
+                {
+                  "value": {
+                    "name": "B FLAT MAJOR",
+                    "id": "0e20f3b891071f91348d42c970e603ff"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "confirmationStatus": "NONE"
+      }
+    }
+  }
+]
+-----Considered Intents End----
+
+----Json Input Start----
+Json Input: {
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "sessionId": "amzn1.echo-api.session.ea84f76a-0a59-4e1a-a320-4388d3291f9d",
+    "application": {
+      "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+    },
+    "attributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 1,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_STARTLEVEL",
+      "currentDrillIndex": 0,
+      "drillStatusIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "questionNum": 1,
+      "levelScore": 0,
+      "currentDrillName": "Perfect Intervals",
+      "currentDrillRef": "perfect-intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611152000
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+    }
+  },
+  "context": {
+    "Display": {},
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AGVYRG7NVW46LBWB2EFHOBEAP5QD3Z7PYZX5GET462EDJ65Z5MJKBIDWDKJ6E3HM3WWVMUE2H5WIHL2LXI3T4XLALBX2IIUUIVCL777WVUES4D74YNNTKO7RCNMFPME5E4W3542MJ2JKQQUU3N6JJHSPAC23FBRQN2OSEEQPLIVLNPZ5EKFZM",
+        "supportedInterfaces": {
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.eu.amazonalexa.com",
+      "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjk5Y2ZjM2UyLTdlZWEtNGM5My1hOTUzLWMzM2QwNTI3YTk0MSIsImV4cCI6MTU2NzYxMTUyNiwiaWF0IjoxNTY3NjExMjI2LCJuYmYiOjE1Njc2MTEyMjYsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFEcmNBMEZ0MVVoMGRuQVh5Q2xIUVRsS3dFQUFBQUFBQUNTRDdUeEpuTTVwYWZWUWM5SDhUS2FDOHMra0xqMVVQU0prM09MbWNxRGRST3NOUnpvTlVibElxc3VlUXVtSlZSdFJyTDNXSGNJT2lxbk82UGxDZ2dYNVdnRDQxNFBTMzVvQlVNMGVpMFBjMWV5dWQwbnJVZ09TSklxdVpDZi9Ic0RjWmZGcXgwd2NUSlFmNmU3TjVac1JISlRxRFlCR3o5ZU1rY1BWUkI4bWFybHJHUUF4eGppRXJLZHZRTDBBYmJHRmFETWlDM2Ztck9iaEFETlovNlVyYmo4RHNvWk9FMUI3UTd4L2VFanhkcFpnY2lhdUgvV3E3TVZZY3IvZ1NYdXpUWmNTRUVsNzNOUjkvaVVSM1dWbmhzdzNyM25yb1FzenQwTytVcVBiemU0MUU4TUYvMEpENyt2aUJEUlNUbXpQdDhkdld6bkZseW5zTzF3b0pqTks5RVUrOHlMQTh0a1NXNW1pZ3ZiTVdibjByL2JES05PalVBUDZ1SytHaUpBdHlzWGpPcFcySGtqTHc9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHVllSRzdOVlc0NkxCV0IyRUZIT0JFQVA1UUQzWjdQWVpYNUdFVDQ2MkVESjY1WjVNSktCSURXREtKNkUzSE0zV1dWTVVFMkg1V0lITDJMWEkzVDRYTEFMQlgySUlVVUlWQ0w3NzdXVlVFUzRENzRZTk5US083UkNOTUZQTUU1RTRXMzU0Mk1KMkpLUVFVVTNONkpKSFNQQUMyM0ZCUlFOMk9TRUVRUExJVkxOUFo1RUtGWk0iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRURXVkJNVFZESDRITUdUVVVCMlRPWTdaSFNWQ0UzUEFHVUFJUFNTQkxDRkQzRzJGN1BZNlpCS1dYNE1CTldOQ1ZJRllFUzdFWE5UTERQQUpNRk1FV0RDUFQ1UEhKSlJDNVJXWUFOQ1RYVzdRUkFDQVY1Q0Y1WlI2SUREWUI3RU5PQktZU1JVUkFINkZPNk5USEVLTkQ1NUJLM0JWNkxMUTdGVTdZMkRKVzZYRUVDSFVQRFVLUlRINFJYVVJCQ0o1M1lOWU1QVkxKVjJZSkEifX0.XaRnYMmj5Nps-XqnGr1yn9OSi0vqrrmvz9U2PWye8lqmXsm9mh6uCxpziBMMzPP4F8nJxt07aPvoSBcPs_8S9BbW53l69ZhwXmpcOjB65a7PafDRgrJMFnM4UulB7fAjceXWVagGT1chaJH5UD52DE1pbFfKDBt89CvFXNxdy4PIz21lw5rGC0hOTEnyJtPFbANBhr60LmIPhygiBq-yt7a3IbhMcaKtdCujz_6PxnuNqw64fyWK8u4SOjVN-IQtLK292Aeh7d1l27uVUyZN_VtZBiBzRLsLEjhOI893SIs_F78t6-rtT-RhU-PByccdN3xEj-L3QAtt5x-lF7BV-g"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.c8f3a5ae-17ad-4a2e-9cd7-08262d487b86",
+    "timestamp": "2019-09-04T15:33:46Z",
+    "locale": "en-GB",
+    "intent": {
+      "name": "AnswerIntent",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "ANSWER": {
+          "name": "ANSWER",
+          "value": "b flat major",
+          "resolutions": {
+            "resolutionsPerAuthority": [
+              {
+                "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.KEYS",
+                "status": {
+                  "code": "ER_SUCCESS_MATCH"
+                },
+                "values": [
+                  {
+                    "value": {
+                      "name": "B FLAT MAJOR",
+                      "id": "0e20f3b891071f91348d42c970e603ff"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "confirmationStatus": "NONE",
+          "source": "USER"
+        }
+      }
+    }
+  }
+}
+----Json Input End----
+
+----Json Output Start----
+Json Output: {
+  "body": {
+    "version": "1.0",
+    "response": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>That's right! Question 2. what is the fifth of G MAJOR ?</speak>"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "type": "SSML",
+          "ssml": "<speak>That's right! Question 2. what is the fifth of G MAJOR ?</speak>"
+        }
+      },
+      "shouldEndSession": false,
+      "type": "_DEFAULT_RESPONSE"
+    },
+    "sessionAttributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 1,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_STARTLEVEL",
+      "currentDrillIndex": 0,
+      "drillStatusIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "questionNum": 2,
+      "levelScore": 1,
+      "currentDrillName": "Perfect Intervals",
+      "currentDrillRef": "perfect-intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611152000
+    },
+    "userAgent": "ask-node/2.6.0 Node/v10.16.3"
+  }
+}
+----Json Output End----
+
+----Alexa Responds Start----
+Alexa Responds: That's right! Question 2. what is the fifth of G MAJOR ?
+----Alexa Responds End----
+
+----User Says Start----
+User Says: d major
+----User Says End----
+
+-----Considered Intents Start----
+Considered Intents: [
+  {
+    "name": "AnswerIntent",
+    "confirmationStatus": "NONE",
+    "slots": {
+      "ANSWER": {
+        "name": "ANSWER",
+        "value": "d major",
+        "resolutions": {
+          "resolutionsPerAuthority": [
+            {
+              "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.KEYS",
+              "status": {
+                "code": "ER_SUCCESS_MATCH"
+              },
+              "values": [
+                {
+                  "value": {
+                    "name": "D MAJOR",
+                    "id": "a1f992dd6a1856a6089b9897f6e74fd8"
+                  }
+                },
+                {
+                  "value": {
+                    "name": "D FLAT MAJOR",
+                    "id": "c26a3755958593d1f6a1ac17f89534e8"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "confirmationStatus": "NONE"
+      }
+    }
+  },
+  {
+    "name": "AMAZON.FallbackIntent",
+    "confirmationStatus": "NONE",
+    "slots": {}
+  },
+  {
+    "name": "AnswerIntent",
+    "confirmationStatus": "NONE",
+    "slots": {
+      "ANSWER": {
+        "name": "ANSWER",
+        "value": "major",
+        "resolutions": {
+          "resolutionsPerAuthority": [
+            {
+              "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.KEYS",
+              "status": {
+                "code": "ER_SUCCESS_MATCH"
+              },
+              "values": [
+                {
+                  "value": {
+                    "name": "A MAJOR",
+                    "id": "2fa5e31982024d3d89b137678e0e7363"
+                  }
+                },
+                {
+                  "value": {
+                    "name": "G MAJOR",
+                    "id": "7706d07a715ca3d256f1ba54d0d4da81"
+                  }
+                },
+                {
+                  "value": {
+                    "name": "D MAJOR",
+                    "id": "a1f992dd6a1856a6089b9897f6e74fd8"
+                  }
+                },
+                {
+                  "value": {
+                    "name": "F MAJOR",
+                    "id": "25c9564d50af223574337ce38d50e960"
+                  }
+                },
+                {
+                  "value": {
+                    "name": "C MAJOR",
+                    "id": "b910bd2f0cb1f28d31cf22d38f4e2a91"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "confirmationStatus": "NONE"
+      }
+    }
+  },
+  {
+    "name": "IWantToPlayIntent",
+    "confirmationStatus": "NONE",
+    "slots": {
+      "packToPlay": {
+        "name": "packToPlay",
+        "value": "major",
+        "resolutions": {
+          "resolutionsPerAuthority": [
+            {
+              "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.packType",
+              "status": {
+                "code": "ER_SUCCESS_NO_MATCH"
+              }
+            }
+          ]
+        },
+        "confirmationStatus": "NONE"
+      }
+    }
+  },
+  {
+    "name": "RefundPackIntent",
+    "confirmationStatus": "NONE",
+    "slots": {
+      "packToReturn": {
+        "name": "packToReturn",
+        "value": "major",
+        "resolutions": {
+          "resolutionsPerAuthority": [
+            {
+              "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.packType",
+              "status": {
+                "code": "ER_SUCCESS_NO_MATCH"
+              }
+            }
+          ]
+        },
+        "confirmationStatus": "NONE"
+      }
+    }
+  }
+]
+-----Considered Intents End----
+
+----Json Input Start----
+Json Input: {
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "sessionId": "amzn1.echo-api.session.ea84f76a-0a59-4e1a-a320-4388d3291f9d",
+    "application": {
+      "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+    },
+    "attributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 1,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_STARTLEVEL",
+      "currentDrillIndex": 0,
+      "drillStatusIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "questionNum": 2,
+      "levelScore": 1,
+      "currentDrillName": "Perfect Intervals",
+      "currentDrillRef": "perfect-intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611152000
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+    }
+  },
+  "context": {
+    "Display": {},
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AGVYRG7NVW46LBWB2EFHOBEAP5QD3Z7PYZX5GET462EDJ65Z5MJKBIDWDKJ6E3HM3WWVMUE2H5WIHL2LXI3T4XLALBX2IIUUIVCL777WVUES4D74YNNTKO7RCNMFPME5E4W3542MJ2JKQQUU3N6JJHSPAC23FBRQN2OSEEQPLIVLNPZ5EKFZM",
+        "supportedInterfaces": {
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.eu.amazonalexa.com",
+      "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjk5Y2ZjM2UyLTdlZWEtNGM5My1hOTUzLWMzM2QwNTI3YTk0MSIsImV4cCI6MTU2NzYxMTUzMCwiaWF0IjoxNTY3NjExMjMwLCJuYmYiOjE1Njc2MTEyMzAsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFEcmNBMEZ0MVVoMGRuQVh5Q2xIUVRsS3dFQUFBQUFBQUJkR1k0Z0RJYXZqM0RKUnlhK0ZnZm5RMHNxMGpYbXVpcll0bThEWDFocVl1MktrMGtheW5yd3lwa0R1aEtySnBiL05sOGphcXJGNzk2K3NQV21ZSnhjMlUxczhodHhic0dUWFdoSEVDYnREN2x0YTV3OG05dFlWNnM0am1nUjBlbXRRRDVDcmprdEoyZG9URndFK2p2VzRZazBGRUdiZ2RPdkxoZG9xNm15UlM0TU10VjZDU29yVmc4akVpSG9mdnVmWHJQK0JEdTZhNTZBYzIwZzZhRXIxcTluVEFuaTBmWnNVcVY0VFVvVFJVNjVYOWY4M1IxU0NTWFlPb1VNdkdiV3BEemtCMElRdXZOL1RaVHZXKzNTeDVYN2lOaTI0QzlCOVNuV0IxQVNsWlBpbC9NbkYxVC8wQUhHeEJaZjlZUDBYcWE1aksrbWVWWitoOWN6L3h1aUkyZ1BaNVltaWRxQ0RqZW9CRzBtazY1Y1QxR05sbkc2c0VQMHQ0bXp0VDdsSXoxWndSbXlFdnVYUlE9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHVllSRzdOVlc0NkxCV0IyRUZIT0JFQVA1UUQzWjdQWVpYNUdFVDQ2MkVESjY1WjVNSktCSURXREtKNkUzSE0zV1dWTVVFMkg1V0lITDJMWEkzVDRYTEFMQlgySUlVVUlWQ0w3NzdXVlVFUzRENzRZTk5US083UkNOTUZQTUU1RTRXMzU0Mk1KMkpLUVFVVTNONkpKSFNQQUMyM0ZCUlFOMk9TRUVRUExJVkxOUFo1RUtGWk0iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRURXVkJNVFZESDRITUdUVVVCMlRPWTdaSFNWQ0UzUEFHVUFJUFNTQkxDRkQzRzJGN1BZNlpCS1dYNE1CTldOQ1ZJRllFUzdFWE5UTERQQUpNRk1FV0RDUFQ1UEhKSlJDNVJXWUFOQ1RYVzdRUkFDQVY1Q0Y1WlI2SUREWUI3RU5PQktZU1JVUkFINkZPNk5USEVLTkQ1NUJLM0JWNkxMUTdGVTdZMkRKVzZYRUVDSFVQRFVLUlRINFJYVVJCQ0o1M1lOWU1QVkxKVjJZSkEifX0.MWkllnJ4eXJYtVAnBysrBwWH1tMf_K0NfX-RYkFO2Bx5k25HeOAEiInQfoN_GtnIuntqFYuLT1Q0QLMVtz17Lp6tX4nC8ZFRCuaKdO0lsOZEcUbsdysWM-JgBk1Tn9BvigOztCg7MZdh4DZChXPlA888Y0rzC_h5j4zGnlgZtz2oENX8X0EhQSHKGpdDh2lryXkIWugpCg9g9THQOHBJgb6gQgAXm-pllY_R-lT0xvYIxt6-vQh6dFARob42L4qfpCtgsTIAye9E3p0rvg_yuqPtpyYKHPTUsi-ghCJWHLgu09RKGrgnJi6wj_Hkaf1MengHSRapSIVZoYDrvaEjGw"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.f7474cbb-3313-42d9-902d-56fe186ecefc",
+    "timestamp": "2019-09-04T15:33:50Z",
+    "locale": "en-GB",
+    "intent": {
+      "name": "AnswerIntent",
+      "confirmationStatus": "NONE",
+      "slots": {
+        "ANSWER": {
+          "name": "ANSWER",
+          "value": "d major",
+          "resolutions": {
+            "resolutionsPerAuthority": [
+              {
+                "authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941.KEYS",
+                "status": {
+                  "code": "ER_SUCCESS_MATCH"
+                },
+                "values": [
+                  {
+                    "value": {
+                      "name": "D MAJOR",
+                      "id": "a1f992dd6a1856a6089b9897f6e74fd8"
+                    }
+                  },
+                  {
+                    "value": {
+                      "name": "D FLAT MAJOR",
+                      "id": "c26a3755958593d1f6a1ac17f89534e8"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "confirmationStatus": "NONE",
+          "source": "USER"
+        }
+      }
+    }
+  }
+}
+----Json Input End----
+
+----Json Output Start----
+Json Output: {
+  "body": {
+    "version": "1.0",
+    "response": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>It is! You have completed Perfect Intervals level 1 with a score of 2 out of 2. First class!Are you ready for the next level?</speak>"
+      },
+      "reprompt": {
+        "outputSpeech": {
+          "type": "SSML",
+          "ssml": "<speak>It is! You have completed Perfect Intervals level 1 with a score of 2 out of 2. First class!Are you ready for the next level?</speak>"
+        }
+      },
+      "shouldEndSession": false,
+      "type": "_DEFAULT_RESPONSE"
+    },
+    "sessionAttributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 2,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_ENDOFLEVEL",
+      "currentDrillIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "levelScore": 2,
+      "currentDrillRef": "perfect-intervals",
+      "drillStatusIndex": 0,
+      "questionNum": 2,
+      "percentScore": 100,
+      "currentDrillName": "Perfect Intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611152000
+    },
+    "userAgent": "ask-node/2.6.0 Node/v10.16.3"
+  }
+}
+----Json Output End----
+
+----Alexa Responds Start----
+Alexa Responds: It is! You have completed Perfect Intervals level 1 with a score of 2 out of 2. First class!Are you ready for the next level?
+----Alexa Responds End----
+
+----User Says Start----
+User Says: stop
+----User Says End----
+
+-----Considered Intents Start----
+Considered Intents: [
+  {
+    "name": "AMAZON.StopIntent",
+    "confirmationStatus": "NONE",
+    "slots": {}
+  }
+]
+-----Considered Intents End----
+
+----Json Input Start----
+Json Input: {
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "sessionId": "amzn1.echo-api.session.ea84f76a-0a59-4e1a-a320-4388d3291f9d",
+    "application": {
+      "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+    },
+    "attributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 2,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_ENDOFLEVEL",
+      "currentDrillIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "levelScore": 2,
+      "currentDrillRef": "perfect-intervals",
+      "drillStatusIndex": 0,
+      "questionNum": 2,
+      "percentScore": 100,
+      "currentDrillName": "Perfect Intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611152000
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+    }
+  },
+  "context": {
+    "Display": {},
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AGVYRG7NVW46LBWB2EFHOBEAP5QD3Z7PYZX5GET462EDJ65Z5MJKBIDWDKJ6E3HM3WWVMUE2H5WIHL2LXI3T4XLALBX2IIUUIVCL777WVUES4D74YNNTKO7RCNMFPME5E4W3542MJ2JKQQUU3N6JJHSPAC23FBRQN2OSEEQPLIVLNPZ5EKFZM",
+        "supportedInterfaces": {
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.eu.amazonalexa.com",
+      "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjk5Y2ZjM2UyLTdlZWEtNGM5My1hOTUzLWMzM2QwNTI3YTk0MSIsImV4cCI6MTU2NzYxMTUzNiwiaWF0IjoxNTY3NjExMjM2LCJuYmYiOjE1Njc2MTEyMzYsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFEcmNBMEZ0MVVoMGRuQVh5Q2xIUVRsS3dFQUFBQUFBQUREL0FIeVVjdC9oaHpFd21DQk4xL3J3UkJiNWk5eXpmbitWV1E1OXVpTURVaDZaQ0JNdVl2Ty9FV3o3UHhLQThiSXZmNStRdVhXdzBQTERacENMc0s2VmN2UmpXekZybVNSVnVBSGFhemVKbTYzNzR5VkgzaTBRRHNDcEs1Q0NaRWJieUZyWCs0ZUxyQVhyQXlheDdLU2RXM0cwSUxJQWpGR0t3Z0YzREowdmNvcEJRVkQzSUJPTzJ6NmhDVGlNbktuNUJNc0JzVWtXTzhuay93eDQza0hxelc2YXk0eUJYbUFoS3E4MWtJTmZ3VmdMQ2ZYeGl5cHVnaWRTdmN6QlI5azRsb05Hb0J3NjloUUp6bHNUclExc0RxNmdIRzhUa2Z0ZHUzYUJxM2xDTUtFZjYyeWJ0ZkREWGVzanV2RUNzc2dLaG82ZUFzNlQwNjM1WWl1REEyY21HWEQ4bTY4UUpPTGxFZGNBOWpObFRKVmF6YmowUVZPZlA5U1c5cGFXOVFmZEowYWcvT0Y0THVSL1E9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHVllSRzdOVlc0NkxCV0IyRUZIT0JFQVA1UUQzWjdQWVpYNUdFVDQ2MkVESjY1WjVNSktCSURXREtKNkUzSE0zV1dWTVVFMkg1V0lITDJMWEkzVDRYTEFMQlgySUlVVUlWQ0w3NzdXVlVFUzRENzRZTk5US083UkNOTUZQTUU1RTRXMzU0Mk1KMkpLUVFVVTNONkpKSFNQQUMyM0ZCUlFOMk9TRUVRUExJVkxOUFo1RUtGWk0iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRURXVkJNVFZESDRITUdUVVVCMlRPWTdaSFNWQ0UzUEFHVUFJUFNTQkxDRkQzRzJGN1BZNlpCS1dYNE1CTldOQ1ZJRllFUzdFWE5UTERQQUpNRk1FV0RDUFQ1UEhKSlJDNVJXWUFOQ1RYVzdRUkFDQVY1Q0Y1WlI2SUREWUI3RU5PQktZU1JVUkFINkZPNk5USEVLTkQ1NUJLM0JWNkxMUTdGVTdZMkRKVzZYRUVDSFVQRFVLUlRINFJYVVJCQ0o1M1lOWU1QVkxKVjJZSkEifX0.WC-9MPxNEAe8NRhR-8RBstbjvSl24QFGJDHrISNYfWBcaNVJ-pUzxMoBeiSXzg34pC_AqqOeuYayqE-C1Zskr0ggXScbv5U-zzcd7dOpm4AY0bvIgxmZhEZjpHkG433FwWnokiBTC5ipVwaga6RptPXAWoke9zvP1SsX0ZXWOUqFjQHUsKHoxX_j8_Th8ilY0WJwyFVeYyjfXmYU58OudetPCb9IiU3fqKL25edkDsMw9UQNUgWUoV8j44ILC_E8E5cjqBbTSGFIPF-DV8jEzSsVjWtTlW6oDeKXJXL8IIkj_Xm3SPDj3saNiJAWEzQxiqaWBnhm8qRckTeqAJxmLw"
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "amzn1.echo-api.request.584b4c8c-90e4-4ec3-862d-c824f480c24e",
+    "timestamp": "2019-09-04T15:33:56Z",
+    "locale": "en-GB",
+    "intent": {
+      "name": "AMAZON.StopIntent",
+      "confirmationStatus": "NONE"
+    }
+  }
+}
+----Json Input End----
+
+----Json Output Start----
+Json Output: {
+  "body": {
+    "version": "1.0",
+    "response": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>Thanks for playing Circle of fifths.</speak>"
+      },
+      "shouldEndSession": true,
+      "type": "_DEFAULT_RESPONSE"
+    },
+    "sessionAttributes": {
+      "launchCount": 2,
+      "drillStatus": [
+        {
+          "drill": {
+            "level": 2,
+            "ref": "perfect-intervals",
+            "completed": false
+          }
+        }
+      ],
+      "skillState": "_ENDOFLEVEL",
+      "currentDrillIndex": 0,
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "levelScore": 2,
+      "currentDrillRef": "perfect-intervals",
+      "drillStatusIndex": 0,
+      "questionNum": 2,
+      "percentScore": 100,
+      "currentDrillName": "Perfect Intervals",
+      "entitledProducts": [],
+      "lastUseTimestamp": 1567611236000
+    },
+    "userAgent": "ask-node/2.6.0 Node/v10.16.3"
+  }
+}
+----Json Output End----
+
+----Alexa Responds Start----
+Alexa Responds: Thanks for playing Circle of fifths.
+----Alexa Responds End----
+

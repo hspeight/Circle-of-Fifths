@@ -1,0 +1,33 @@
+
+
+{
+    "perfect-intervals": {
+        "name": "Perfect Intervals",
+        "levels": [{
+                "key": "fifth",
+                "data": ["A FLAT MAJOR"]
+            },
+            
+            {
+                "key": "fourth",
+                "data": ["E MAJOR"]
+            },
+            
+        ]
+    },
+    "relative-keys": {
+        "name": "Relative Keys",
+        "levels": [{
+            "key": "relkey",
+            "data": ["F SHARP MINOR"]
+        },
+
+    ]
+    },
+    "key-signatures": {
+        "name": "Key Signatures",
+        "levels": [{
+            "key": "sig",
+            "data": ["D MINOR"]
+        }, ]
+    }

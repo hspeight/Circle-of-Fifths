@@ -1,0 +1,130 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+           "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Frame",
+                "height": "100vh",
+                "width": "100vw",
+                "backgroundColor": "#58ACFA",
+                "items": [
+                    {
+                        "when": "${@viewportProfile == @hubRoundSmall}",
+                        "type": "Container",
+                        "height": "100vh",
+                        "width": "100vw",
+                        "items": [
+
+                            {
+                                "headerAttributionText": "Attribution",
+                                
+                                "headerAttributionImage": "${payload.bodyTemplate7Data.image.sources[0].url}",
+                                "headerBackgroundColor": "transparent",
+                                "type": "AlexaHeader",
+                                "top": "1vh"
+                            },
+                            {
+                                "type": "Text",
+                                "textAlign": "center",
+                                "fontSize": "6vh",
+                                "color": "#9900ff",
+                                "fontFamily": "serif, times new roman, times, georgia",
+                                "text": "${payload.bodyTemplate7Data.text.level}",
+                                "fontWeight": "300",
+                                "top": "10vh"
+                            },
+                            {
+                                "type": "Text",
+                                "textAlign": "center",
+                                "color": "#9900ff",
+                                "fontFamily": "serif, times new roman, times, georgia",
+                                "text": "What is the fifth of D MAJOR",
+                                "top": "15vh"
+                            },
+                            {
+                                "type": "Text",
+                                "textAlign": "center",
+                                "fontSize": "6vh",
+                                "color": "#9900ff",
+                                "fontFamily": "serif, times new roman, times, georgia",
+                                "text": "Score: x/y",
+                                "fontWeight": "300",
+                                "top": "18vh"
+                            },
+                            {
+                                "type": "Image",
+                                "width": "70vw",
+                                "height": "67vh",
+                                "source": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/button-blank-3d85c6.png",
+                                "alignSelf": "center",
+                                
+                                "position": "absolute"
+                            },
+                            {
+                                "type": "Text",
+                                "textAlign": "center",
+                                "fontStyle": "italic",
+                                "fontSize": "6vw",
+                                "text": "${payload.bodyTemplate7Data.text.drill}",
+                                "fontWeight": "900",
+                                "position": "absolute",
+                                "left": "12vw",
+                                "top": "30vh",
+                                "right": "12vw"
+                            }
+                        ]
+                    },
+                    {
+                        "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                        "type": "Container",
+                        "height": "100vh",
+                        "width": "100vw",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "fontSize": "6vw",
+                                "text": "Hello World!!",
+                                "fontWeight": "900",
+                                "position": "absolute",
+                                "left": "5vh",
+                                "top": "2vh"
+                            },
+                            {
+                                "type": "Image",
+                                "source": "https://dl.dropbox.com/s/ws3p9ckm2voekdl/helloWorld.png?dl=0",
+                                "height": "90vh",
+                                "width": "100vw",
+                                "position": "absolute",
+                                "left": "35vh",
+                                "top": "12vh"
+                            },
+                            {
+                                "type": "Text",
+                                "text": "Here is some text used just on larger screens and there is more room to play with!",
+                                "position": "absolute",
+                                "left": "5vh",
+                                "right": "55vw",
+                                "top": "15vh",
+                                "fontSize": "5vw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

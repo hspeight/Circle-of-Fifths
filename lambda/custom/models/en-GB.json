@@ -1,0 +1,437 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "circle of fifths",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": [
+            "new test",
+            "new game"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "ANSWER",
+              "type": "KEYS"
+            }
+          ],
+          "samples": [
+            "the answer is {ANSWER}",
+            "{ANSWER}"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "PurchaseHistoryIntent",
+          "slots": [],
+          "samples": [
+            "what can i play",
+            "purchase history",
+            "what do i own",
+            "what have I bought",
+            "what have I purchased",
+            "order history"
+          ]
+        },
+        {
+          "name": "WhatCanIBuyIntent",
+          "slots": [],
+          "samples": [
+            "what's available to purchase",
+            "what's available to buy",
+            "what's on offer",
+            "what can I buy",
+            "what can I purchase"
+          ]
+        },
+        {
+          "name": "TellMeMoreAboutPackIntent",
+          "slots": [
+            {
+              "name": "productCategory",
+              "type": "packType"
+            }
+          ],
+          "samples": [
+            "tell me more about {productCategory}",
+            "what is {productCategory}",
+            "what do you know about {productCategory}"
+          ]
+        },
+        {
+          "name": "BuyPackIntent",
+          "slots": [
+            {
+              "name": "productCategory",
+              "type": "packType"
+            }
+          ],
+          "samples": [
+            "buy {productCategory}",
+            "i want to buy {productCategory} pack",
+            "let's buy {productCategory} pack",
+            "how do i buy {productCategory} pack",
+            "Can I buy {productCategory} pack",
+            "purchase {productCategory} pack ",
+            "buy {productCategory} pack"
+          ]
+        },
+        {
+          "name": "WhatIsTheAnswerIntent",
+          "slots": [],
+          "samples": [
+            "tell me the answer",
+            "give me the answer",
+            "what's the answer"
+          ]
+        },
+        {
+          "name": "IWantToPlayIntent",
+          "slots": [
+            {
+              "name": "packToPlay",
+              "type": "packType"
+            }
+          ],
+          "samples": [
+            "open {packToPlay}",
+            "let's play {packToPlay}",
+            "start {packToPlay}",
+            "let me play {packToPlay}",
+            "i want to play {packToPlay}"
+          ]
+        },
+        {
+          "name": "RefundPackIntent",
+          "slots": [
+            {
+              "name": "packToReturn",
+              "type": "packType"
+            }
+          ],
+          "samples": [
+            "return {packToReturn} pack",
+            "refund {packToReturn} pack",
+            "cancel {packToReturn} pack",
+            "return {packToReturn}",
+            "refund {packToReturn}",
+            "cancel {packToReturn}"
+          ]
+        },
+        {
+          "name": "HowManySharpsFlatsIntent",
+          "slots": [
+            {
+              "name": "NumberOfSharpFlats",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "{NumberOfSharpFlats} flats",
+            "{NumberOfSharpFlats} sharps",
+            "no flats",
+            "no sharps",
+            "none"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "C MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "G MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "D MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "A MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "E MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "B MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "C FLAT MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "G FLAT MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "F SHARP MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "D FLAT MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "C SHARP MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "A FLAT MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "E FLAT MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "B FLAT MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "F MAJOR"
+              }
+            },
+            {
+              "name": {
+                "value": "A MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "D MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "G MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "C MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "F MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "B FLAT MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "A SHARP MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "E FLAT MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "D SHARP MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "A FLAT MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "G SHARP MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "C SHARP MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "F SHARP MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "B MINOR"
+              }
+            },
+            {
+              "name": {
+                "value": "E MINOR"
+              }
+            }
+          ],
+          "name": "KEYS"
+        },
+        {
+          "values": [
+            {
+              "id": "perfect-pitch",
+              "name": {
+                "value": "perfect_pitch",
+                "synonyms": [
+                  "perfect pitch"
+                ]
+              }
+            },
+            {
+              "id": "perfect-intervals",
+              "name": {
+                "value": "intervals",
+                "synonyms": [
+                  "perfect intervals"
+                ]
+              }
+            },
+            {
+              "id": "key-signatures",
+              "name": {
+                "value": "key_signature",
+                "synonyms": [
+                  "key signatures",
+                  "key signature"
+                ]
+              }
+            },
+            {
+              "id": "relative-keys",
+              "name": {
+                "value": "relative_keys",
+                "synonyms": [
+                  "relative keys"
+                ]
+              }
+            },
+            {
+              "id": "random",
+              "name": {
+                "value": "random"
+              }
+            },
+            {
+              "name": {
+                "value": "free"
+              }
+            },
+            {
+              "name": {
+                "value": "all_access",
+                "synonyms": [
+                  "all access"
+                ]
+              }
+            }
+          ],
+          "name": "packType"
+        }
+      ]
+    }
+  },
+  "version": "79"
+}

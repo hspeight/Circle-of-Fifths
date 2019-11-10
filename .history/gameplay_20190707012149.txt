@@ -1,0 +1,24 @@
+Free
+alternate between fourths and fifths
+Notify user of a high score
+Add a info button for users with anything but a round hub
+
+Premium
+allow user to select drill
+include mixed 4ths & fifths drill
+include relative keys drill
+Key signatures ?
+
+Either
+offer user chance to rate game every four invocations (e.g. like Move Quote Quiz)
+
+
+Drills
+1. perfect fourths
+2. perfect fifths
+3. perfect fourths & fifths
+4. relative keys
+5. chord progressions e.g. in F major what chords are the 2 5 1
+
+Potential
+Leaderboards - https://developer.amazon.com/blogs/alexa/post/671de3de-0635-4626-9371-e926d7d655d6/skills-gameon-sdk?&sc_category=Owned&sc_channel=EM&sc_campaign=UKJulyNL&sc_publisher=OT&sc_content=Content&sc_funnel=Convert&sc_country=UK&sc_medium=Owned_EM_UKJulyNL_OT_Content_Convert_UK_RegisteredDevs&sc_segment=RegisteredDevs&mkt_tok=eyJpIjoiWWpaa056ZG1NV1JsTlRNdyIsInQiOiJtNElYQzJQNWt4XC9mQ1RTa0R0cDRMK01tRmNDbXdwdEJvYlcyN3pjTmEyMWlWOWd5RUxSb1VtSFZrUGFHWkY4cllvZkxpRng5QmR1cENmT2hQTFl5d0Mwdys4cmYyaEVOaGY1bnJNRjkrM0lEbUxUM3ZLZTNhb2JycnpuWTE4OUUifQ%3D%3D

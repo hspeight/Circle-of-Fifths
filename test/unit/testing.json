@@ -1,0 +1,5 @@
+{
+    "handler": "../../lambda/custom/index.js",
+    "locales": "en-GB",
+    "interactionModel": "../../models/en-GB.json"
+}

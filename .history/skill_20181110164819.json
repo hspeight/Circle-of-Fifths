@@ -1,0 +1,158 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Let me help you master the circle of fifths with this multiple choice answer quiz",
+          "examplePhrases": [
+            "Alexa open circle of fifths",
+            "Alexa open circle of fifths and start the fourths test",
+            "Alexa open circle of fifths and choose a test for me"
+          ],
+          "keywords": [
+            "circle",
+            "fourths",
+            "fifths",
+            "key",
+            "note",
+            "chord",
+            "interval",
+            "sharp",
+            "flat",
+            "major",
+            "minor",
+            "enharmonic",
+            "piano",
+            "bass",
+            "music",
+            "instrument",
+            "guitar"
+          ],
+          "name": "Circle of Fifths",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/197c/9873c59b43944b3993adda79c9d31d70/APP_ICON?versionId=mav_3sIJpkmWMJmCbnLCnZadUKVOW25l&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954706&Signature=mcySsI7Q01lQoKdtS%2FGi4ZMIgb0%3D",
+          "description": "Every budding musician (and seasoned ones too) should know the circle of fifths inside out and back to front.\nUse this skill to test your knowledge of the circle in intervals of fourths or fifths.\nEach test consists of 15 multiple choice questions. That's 12 major keys plus the enharmonic equivalents in a random order.\nYou simply need to reply to each question with the number of the correct answer.\nIf you are new to the circle of fifths you can print this diagram to assist you until you are able to do the tests from memory.\nhttps://???.???.???/COFDiagram.pdf\nPlease leave a 5-star review if you enjoy playing this skill.\nFeel free to email skills@points-in-time.com with any suggested improvements.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/a8f3/0ce2822bd97942c1a10a152ab2dd23cf/APP_ICON_LARGE?versionId=HbmSgDqXMiP5dhUdI9.J.fL1tjmod6hx&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954706&Signature=L1SLzTljDJP1%2Fd85KUIN%2BJ6L5IQ%3D"
+        },
+        "en-AU": {
+          "summary": "Let me help you master the circle of fifths with this multiple choice answer quiz",
+          "examplePhrases": [
+            "Alexa open circle of fifths",
+            "Alexa open circle of fifths and start the fourths test",
+            "Alexa open circle of fifths and choose a test for me"
+          ],
+          "keywords": [
+            "circle",
+            "fourths",
+            "fifths",
+            "key",
+            "note",
+            "chord",
+            "interval",
+            "sharp",
+            "flat",
+            "major",
+            "minor",
+            "enharmonic",
+            "piano",
+            "bass",
+            "music",
+            "instrument",
+            "guitar"
+          ],
+          "name": "Circle of Fifths",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3c6c/6bfa4c3e1f4c4e6e9150ec890805f4a3/APP_ICON?versionId=zdipHtanedP.rEZLDEbLpm_4Sj.3XewF&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954706&Signature=jG5oK9OUQhKopK%2BOybmEmhWNLHE%3D",
+          "description": "Every budding musician (and seasoned ones too) should know the circle of fifths inside out and back to front.\nUse this skill to test your knowledge of the circle in intervals of fourths or fifths.\nEach test consists of 15 multiple choice questions. That's 12 major keys plus the enharmonic equivalents in a random order.\nYou simply need to reply to each question with the number of the correct answer.\nIf you are new to the circle of fifths you can print this diagram to assist you until you are able to do the tests from memory.\nhttps://???.???.???/COFDiagram.pdf\nPlease leave a 5-star review if you enjoy playing this skill.\nFeel free to email skills@points-in-time.com with any suggested improvements.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3b9e/7f4dae1c15c34ad49aa41df25b9ba41c/APP_ICON_LARGE?versionId=BPJSSko5tiUFLYBjbhTviwFNlf5Lguq5&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954707&Signature=Ax%2BsHuRIAg32TnoRhIFvLZjiUZU%3D"
+        },
+        "en-IN": {
+          "summary": "Let me help you master the circle of fifths with this multiple choice answer quiz",
+          "examplePhrases": [
+            "Alexa open circle of fifths",
+            "Alexa open circle of fifths and start the fourths test",
+            "Alexa open circle of fifths and choose a test for me"
+          ],
+          "keywords": [
+            "circle",
+            "fourths",
+            "fifths",
+            "key",
+            "note",
+            "chord",
+            "interval",
+            "sharp",
+            "flat",
+            "major",
+            "minor",
+            "enharmonic",
+            "piano",
+            "bass",
+            "music",
+            "instrument",
+            "guitar"
+          ],
+          "name": "Circle of Fifths",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3c6c/6bfa4c3e1f4c4e6e9150ec890805f4a3/APP_ICON?versionId=zdipHtanedP.rEZLDEbLpm_4Sj.3XewF&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954706&Signature=jG5oK9OUQhKopK%2BOybmEmhWNLHE%3D",
+          "description": "Every budding musician (and seasoned ones too) should know the circle of fifths inside out and back to front.\nUse this skill to test your knowledge of the circle in intervals of fourths or fifths.\nEach test consists of 15 multiple choice questions. That's 12 major keys plus the enharmonic equivalents in a random order.\nYou simply need to reply to each question with the number of the correct answer.\nIf you are new to the circle of fifths you can print this diagram to assist you until you are able to do the tests from memory.\nhttps://???.???.???/COFDiagram.pdf\nPlease leave a 5-star review if you enjoy playing this skill.\nFeel free to email skills@points-in-time.com with any suggested improvements.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3b9e/7f4dae1c15c34ad49aa41df25b9ba41c/APP_ICON_LARGE?versionId=BPJSSko5tiUFLYBjbhTviwFNlf5Lguq5&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954707&Signature=Ax%2BsHuRIAg32TnoRhIFvLZjiUZU%3D"
+        },
+        "en-GB": {
+          "summary": "Let me help you master the circle of fifths with this multiple choice answer quiz",
+          "examplePhrases": [
+            "Alexa open circle of fifths",
+            "Alexa open circle of fifths and start the fourths test",
+            "Alexa open circle of fifths and choose a test for me"
+          ],
+          "keywords": [
+            "circle",
+            "fourths",
+            "fifths",
+            "key",
+            "note",
+            "chord",
+            "interval",
+            "sharp",
+            "flat",
+            "major",
+            "minor",
+            "enharmonic",
+            "piano",
+            "bass",
+            "music",
+            "instrument",
+            "guitar"
+          ],
+          "name": "Circle of Fifths",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/abd4/67bb6b49a6c84967ac9bca43c4e5d11c/APP_ICON?versionId=wXw_QoYz5tlKU6J15ycwKFW3okrIT1_u&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954707&Signature=iznRvfzRFFObq9JDcEUWRrHZkGI%3D",
+          "description": "Every budding musician (and seasoned ones too) should know the circle of fifths inside out and back to front.\nUse this skill to test your knowledge of the circle in intervals of fourths or fifths.\nEach test consists of 15 multiple choice questions. That's 12 major keys plus the enharmonic equivalents in a random order.\nYou simply need to reply to each question with the number of the correct answer.\nIf you are new to the circle of fifths you can print this diagram to assist you until you are able to do the tests from memory.\nhttps://???.???.???/COFDiagram.pdf\nPlease leave a 5-star review if you enjoy playing this skill.\nFeel free to email skills@points-in-time.com with any suggested improvements.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/f372/d6bfe8a404094c86ba36c3e0a7e5c10e/APP_ICON_LARGE?versionId=250xQVm2wYSuPuRxc8lmKyvt_fou9hbe&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1541954707&Signature=Z2plykvU3w4QJ%2BymuFVZ1Tsqajc%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special instructions required.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:806950104761:function:circleOfFifths"
+        },
+        "interfaces": [
+          {
+            "type": "RENDER_TEMPLATE",
+            "minimumTemplateVersion": "1.0"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

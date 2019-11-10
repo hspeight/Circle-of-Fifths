@@ -1,0 +1,6 @@
+{
+  "skillId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941",
+  "locale": "en-GB",
+  "type": "text",
+  "userInput": ["open circle of fifths", "yes", "b flat major", "stop"]
+}

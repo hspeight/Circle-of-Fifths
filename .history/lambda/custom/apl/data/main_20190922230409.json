@@ -1,0 +1,50 @@
+{
+    "bodyTemplate7Data": {
+        "type": "object",
+        "objectId": "bt7Sample",
+        "title": "The circle of fifths",
+        "backgroundImage": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+
+
+            ]
+        },
+        "image": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [{
+                    "url": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/APL/COF_small_hub_400x400.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/APL/COF3.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/APL/cof_bg2.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "video": {
+            "type": "intro",
+            "sources": [{
+                "url": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/Intro.mp4"
+            },
+            {
+                "url": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/Outro.mp4"
+            }]
+        },
+        "hintText": "Try, \"Alexa, search for circle of fifths\""
+    }
+}

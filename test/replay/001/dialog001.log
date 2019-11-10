@@ -1,0 +1,151 @@
+----User Says Start----
+User Says: open circle of fifths
+----User Says End----
+
+-----Considered Intents Start----
+Considered Intents: [
+  {
+    "name": "<LaunchRequest>"
+  }
+]
+-----Considered Intents End----
+
+----Json Input Start----
+Json Input: {
+  "version": "1.0",
+  "session": {
+    "new": true,
+    "sessionId": "amzn1.echo-api.session.4d0fe96c-1bd9-471b-8a90-2291cea45fa7",
+    "application": {
+      "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+    },
+    "user": {
+      "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+    }
+  },
+  "context": {
+    "Display": {},
+    "System": {
+      "application": {
+        "applicationId": "amzn1.ask.skill.99cfc3e2-7eea-4c93-a953-c33d0527a941"
+      },
+      "user": {
+        "userId": "amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA"
+      },
+      "device": {
+        "deviceId": "amzn1.ask.device.AGVYRG7NVW46LBWB2EFHOBEAP5QD3Z7PYZX5GET462EDJ65Z5MJKBIDWDKJ6E3HM3WWVMUE2H5WIHL2LXI3T4XLALBX2IIUUIVCL777WVUES4D74YNNTKO7RCNMFPME5E4W3542MJ2JKQQUU3N6JJHSPAC23FBRQN2OSEEQPLIVLNPZ5EKFZM",
+        "supportedInterfaces": {
+          "Display": {
+            "templateVersion": "1.0",
+            "markupVersion": "1.0"
+          }
+        }
+      },
+      "apiEndpoint": "https://api.eu.amazonalexa.com",
+      "apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjk5Y2ZjM2UyLTdlZWEtNGM5My1hOTUzLWMzM2QwNTI3YTk0MSIsImV4cCI6MTU3MjM4ODg1OCwiaWF0IjoxNTcyMzg4NTU4LCJuYmYiOjE1NzIzODg1NTgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFBRlU3LzRXbE5vNWRSNk5FeWFXeFdxS3dFQUFBQUFBQUQwZStmczRaMmI2OWxPK3FrN2JqdDI4VEdZU3lZSmphSnJtSXRTcFcwL2FIZ0c2RlhuOU41NDl0RmV2cDVsaEoxM3VMaUpnKy9DQzZvamRVd1BudGhnUmVVajhraDllbk5hUEdtSFRyc0VSdTQ1YjBhTncvTXpEN1d5VUlRTmF2YURkM0ZmVUpLaVViVXZ4MnpaTTIzWEFKOHFWMVIxRmlyUVFlUm1GemEyZ05NVTh6TmRqZTNPNHEzMGQyb281dmxyN2Q5bFFSeG5EYzhmdVBiaG52WG1LZnVmSnh0amNTRTFXQWI3WUxqcnNKbFFYY0h3bXZBV1ozdU5UcGVlUDQyNWMyV3NhcGFMNUVwem11cklSNy9ITzlKVmlJUU1hL0IvY1NNR1BCWXpBYm5vNkVnUGFWcFRLSDRtNFdHYXc5RG1QWWt1N0FJMlMwVjlobU1SOTFvNFh4NU5iOGNDcVhkZHQvOGhhUkVFZ2doRW9MSVQvMXhKakNTVHBIbFBselBhYVRRRkhpM2RKMDE1cWc9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHVllSRzdOVlc0NkxCV0IyRUZIT0JFQVA1UUQzWjdQWVpYNUdFVDQ2MkVESjY1WjVNSktCSURXREtKNkUzSE0zV1dWTVVFMkg1V0lITDJMWEkzVDRYTEFMQlgySUlVVUlWQ0w3NzdXVlVFUzRENzRZTk5US083UkNOTUZQTUU1RTRXMzU0Mk1KMkpLUVFVVTNONkpKSFNQQUMyM0ZCUlFOMk9TRUVRUExJVkxOUFo1RUtGWk0iLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRURXVkJNVFZESDRITUdUVVVCMlRPWTdaSFNWQ0UzUEFHVUFJUFNTQkxDRkQzRzJGN1BZNlpCS1dYNE1CTldOQ1ZJRllFUzdFWE5UTERQQUpNRk1FV0RDUFQ1UEhKSlJDNVJXWUFOQ1RYVzdRUkFDQVY1Q0Y1WlI2SUREWUI3RU5PQktZU1JVUkFINkZPNk5USEVLTkQ1NUJLM0JWNkxMUTdGVTdZMkRKVzZYRUVDSFVQRFVLUlRINFJYVVJCQ0o1M1lOWU1QVkxKVjJZSkEifX0.gkjqfVsLw58-ka6BGTRimF6ZqmKdoWEeDFKg5v6Fm7cmFvhqRiVxat5ZdEpeQ7xb5retBVBfuJRFRFLED23N0smHUNnjc4mE0ULK_GphZHJBbHBbcLaLpotmPjGwi9DrSQ0cmQkS_HMLauxjILY20EJI6DbTN08QxLVC1zBSll6yhFFij5Q2qpTuWRiHK98d3OmV4RwYP-AATxdKjCjH-R8bs5MkabbTQHCOsi1YyazXdjksH0HFs-vg-yY3CNC9xHVTUnbs5PJWp0EJEclK7p_C7GYpUMd3C28KE0CNB0eGOZr-1vm81Q-lZFB7H4fa_-qJ4Ry4HWwx1jSuuLnSww"
+    }
+  },
+  "request": {
+    "type": "LaunchRequest",
+    "requestId": "amzn1.echo-api.request.ee14cd37-cbb0-4def-a8a5-f456ccc9e98b",
+    "timestamp": "2019-10-29T22:35:58Z",
+    "locale": "en-GB",
+    "shouldLinkResultBeReturned": false
+  }
+}
+----Json Input End----
+
+----Json Output Start----
+Json Output: {
+  "body": {
+    "version": "1.0",
+    "sessionAttributes": {
+      "launchCount": 1,
+      "drillStatus": [
+        {
+          "drill": "perfect-intervals",
+          "level": 1,
+          "completed": false
+        }
+      ],
+      "skillState": "_QUIZ",
+      "purchasableProducts": [
+        {
+          "productId": "amzn1.adg.product.ac798b5e-fb0d-4e44-bbed-60b2be0cd014",
+          "referenceName": "key-signatures",
+          "type": "ENTITLEMENT",
+          "name": "Key Signatures",
+          "summary": "This pack contains drills that will test you on the sharps and flats of key signatures",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        },
+        {
+          "productId": "amzn1.adg.product.e8b05e85-a615-41f6-b912-071a768dc51f",
+          "referenceName": "relative-keys",
+          "type": "ENTITLEMENT",
+          "name": "Relative Keys",
+          "summary": "The relative Key pack is a drill that will help you to learn relative major and minor keys on the circle of fifths",
+          "entitled": "NOT_ENTITLED",
+          "entitlementReason": "NOT_PURCHASED",
+          "purchasable": "PURCHASABLE",
+          "activeEntitlementCount": 0,
+          "purchaseMode": "TEST"
+        }
+      ],
+      "levelScore": 0,
+      "very1st": false,
+      "levelData": {
+        "key": "fifth",
+        "data": [
+          "A FLAT MAJOR"
+        ]
+      },
+      "currentDrillRef": "perfect-intervals",
+      "currentLevel": 1,
+      "drillName": "Perfect Intervals",
+      "drillLevels": 1,
+      "questionNum": 0,
+      "entitledProducts": [],
+      "lastUseTimestamp": 1572388558000
+    },
+    "userAgent": "ask-node/2.6.0 Node/v8.10.0"
+  }
+}
+----Json Output End----
+
+----Alexa Responds Start----
+Alexa Responds: There was a problem with the requested skill's response
+----Alexa Responds End----
+
+----User Says Start----
+User Says: yes
+----User Says End----
+
+----System Error Start----
+System Error:{
+  "id": "11b858ef-a70c-4fa6-9959-5efea5694462",
+  "status": "FAILED",
+  "result": {
+    "alexaExecutionInfo": {
+      "consideredIntents": [
+        {
+          "name": "<IntentForDifferentSkill>"
+        },
+        {
+          "name": "<IntentForDifferentSkill>"
+        },
+        {
+          "name": "<IntentForDifferentSkill>"
+        }
+      ]
+    },
+    "error": {
+      "message": "This utterance did not resolve to any intent in your skill. Please invoke your skill and try again with a different utterance or update your interaction model to include this utterance before testing again."
+    }
+  }
+}
+----System Error End----
+

@@ -1,0 +1,79 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {
+        "baseText": {
+            "values": [
+                {
+                    "fontFamily": "Amazon Ember",
+                    "color": "${viewport.theme == 'dark' ? 'white' : 'black' }"
+                }
+            ]
+        },
+        "textStyle2": {
+            "values": [
+                {
+                    "fontWeight": 100,
+                    "fontSize": "20"
+                }
+            ]
+        }
+    },
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "payload"
+        ],
+        "items": [
+            {
+                "type": "Container",
+                "width": "100%",
+                "height": "100%",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "items": [
+                    {
+                        "type": "Text",
+                        "style": "textStyle2",
+                        "height": "50",
+                        "text": "Unknown Product",
+                        "bottom": "40%"
+                    },
+                    {
+                        "type": "Image",
+                        "width": "75%",
+                        "height": "75%",
+                        "source": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/COF.png",
+                        "scale": "best-fit",
+                        "align": "center",
+                        "alignSelf": "center",
+                        "position": "absolute"
+                    },
+                    {
+                        "type": "Frame",
+                        "width": "70%",
+                        "height": "15%",
+                        "alignSelf": "center",
+                        "position": "absolute",
+                        "item": [
+                            {
+                                "when": "${@viewportProfile != @hubRoundSmall}",
+                                "type": "AlexaFooter",
+                                "hintText": "Try Alexa, what can I play?"
+                            }
+                        ],
+                        "bottom": "0"
+                    }
+                ]
+            }
+        ]
+    }
+}

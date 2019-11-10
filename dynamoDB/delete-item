@@ -1,0 +1,3 @@
+aws dynamodb delete-item \
+--table-name MusicCollection \
+--key file://key.json

@@ -1,0 +1,93 @@
+{
+    "listTemplate1Metadata": {
+        "type": "object",
+        "objectId": "lt1Metadata",
+        "backgroundImage": {
+            "contentDescription": null,
+            "smallSourceUrl": null,
+            "largeSourceUrl": null,
+            "sources": [
+                {
+                    "url": "https://d2o906d8ln7ui1.cloudfront.net/images/LT1_Background.png",
+                    "size": "small",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                },
+                {
+                    "url": "https://d2o906d8ln7ui1.cloudfront.net/images/LT1_Background.png",
+                    "size": "large",
+                    "widthPixels": 0,
+                    "heightPixels": 0
+                }
+            ]
+        },
+        "title": "Calories in 1 Serving of Cheese",
+        "logoUrl": "https://d2o906d8ln7ui1.cloudfront.net/images/cheeseskillicon.png"
+    },
+    "listTemplate1ListData": {
+        "type": "list",
+        "listId": "lt1Sample",
+        "totalNumberOfItems": 10,
+        "listPage": {
+            "listItems": [
+                {
+                    "listItemIdentifier": "relkeys",
+                    "ordinalNumber": 1,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Relative Keys"
+                        },
+                        "secondaryText": {
+                            "type": "PlainText",
+                            "text": "Serving Size: 1oz (28g)"
+                        },
+                        "tertiaryText": {
+                            "type": "PlainText",
+                            "text": "100 cal"
+                        }
+                    },
+                    "token": "relkeys"
+                },
+                {
+                    "listItemIdentifier": "keysigs",
+                    "ordinalNumber": 2,
+                    "textContent": {
+                        "primaryText": {
+                            "type": "PlainText",
+                            "text": "Key Signatures"
+                        },
+                        "secondaryText": {
+                            "type": "RichText",
+                            "text": "Serving Size: 1 slice (28g)"
+                        },
+                        "tertiaryText": {
+                            "type": "PlainText",
+                            "text": "113 cal"
+                        }
+                    },
+                    "image": {
+                        "contentDescription": null,
+                        "smallSourceUrl": null,
+                        "largeSourceUrl": null,
+                        "sources": [
+                            {
+                                "url": "https://d2o906d8ln7ui1.cloudfront.net/images/sm_cheddar.png",
+                                "size": "small",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            },
+                            {
+                                "url": "https://d2o906d8ln7ui1.cloudfront.net/images/sm_cheddar.png",
+                                "size": "large",
+                                "widthPixels": 0,
+                                "heightPixels": 0
+                            }
+                        ]
+                    },
+                    "token": "keysigs"
+                }
+            ]
+        }
+    }
+}
