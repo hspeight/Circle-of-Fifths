@@ -1,5 +1,0 @@
-cd to /mnt/d/CircleOffifths
-bst proxy lambda lambda/custom/index.js &
-test/replay/dialog.sh 1 (run dialog 1 and reset all purchases)
-egrep "^User Says|^Alexa Responds" test/replay/001/dialog001.log
-egrep "^User|^Alexa" test/replay/001/dialog001.log

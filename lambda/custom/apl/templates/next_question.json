@@ -93,10 +93,11 @@
                         ]
                     },
                     {
-                        "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
                         "type": "Container",
-                        "height": "100vh",
+                        "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge || @viewportProfile == @hubLandscapeSmall}",
                         "width": "100vw",
+                        "height": "100vh",
+                        "justifyContent": "start",
                         "items": [
                             {
                                 "headerAttributionText": "Attribution",
@@ -106,59 +107,84 @@
                                 "top": "1vh"
                             },
                             {
-                                "type": "Text",
-                                "textAlign": "center",
-                                "fontSize": "8vh",
-                                "color": "#9900ff",
-                                "fontFamily": "serif, times new roman, times, georgia",
-                                "text": "${payload.bodyTemplate7Data.text.level}",
-                                "fontWeight": "300",
-                                "top": "8vh"
-                            },
-                            {
-                                "type": "Text",
-                                "width": "80vw",
-                                "height": "30vh",
-                                "textAlign": "center",
-                                "textAlignVertical": "auto",
-                                "color": "#ffffff",
-                                "fontFamily": "serif, times new roman, times, georgia",
-                                "fontSize": "7vh",
-                                "text": "${payload.bodyTemplate7Data.text.question}",
-                                "alignSelf": "center",
-                                "position": "absolute",
-                                "top": "50vh"
-                            },
-                            {
-                                "type": "Text",
-                                "textAlign": "center",
-                                "color": "#9900ff",
-                                "fontFamily": "serif, times new roman, times, georgia",
-                                "fontSize": "10vh",
-                                "text": "${payload.bodyTemplate7Data.text.score}",
-                                "fontWeight": "300",
-                                "position": "relative",
-                                "top": "35vh"
-                            },
-                            {
-                                "type": "Image",
-                                "width": "70vw",
-                                "height": "67vh",
-                                "source": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/button-blank-3d85c6.png",
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "100vh",
+                                "paddingLeft": "16dp",
+                                "paddingTop": "16dp",
+                                "paddingRight": "16dp",
+                                "paddingBottom": "16dp",
+                                "alignItems": "center",
+                                "direction": "column",
+                                "item": [
+                                    {
+                                        "type": "Text",
+                                        "width": "70vw",
+                                        "height": "12vh",
+                                        "alignSelf": "center",
+                                        "position": "absolute",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "auto",
+                                        "fontFamily": "serif, times new roman, times, georgia",
+                                        "text": "${payload.bodyTemplate7Data.text.level}",
+                                        "fontSize": "8vh",
+                                        "color": "#9900ff",
+                                        "fontWeight": "300",
+                                        "top": "40%"
+                                    },
+                                    {
+                                        "type": "Image",
+                                        "width": "70vw",
+                                        "height": "12vh",
+                                        "source": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/button-blank-3d85c6.png",
+                                        "align": "center",
+                                        "alignSelf": "center",
+                                        "position": "absolute",
+                                        "top": "15%"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "width": "70vw",
+                                        "height": "12vh",
+                                        "alignSelf": "center",
+                                        "position": "absolute",
+                                        "textAlign": "center",
+                                        "fontStyle": "italic",
+                                        "fontSize": "8vh",
+                                        "text": "${payload.bodyTemplate7Data.text.drill}",
+                                        "fontWeight": "900",
+                                        "top": "15%"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "width": "80vw",
+                                        "height": "20vh",
+                                        "alignSelf": "center",
+                                        "position": "absolute",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "auto",
+                                        "color": "#ffffff",
+                                        "fontFamily": "serif, times new roman, times, georgia",
+                                        "fontSize": "7vh",
+                                        "text": "${payload.bodyTemplate7Data.text.question}",
+                                        "top": "60%"
+                                    },
+                                    {
+                                        "type": "Text",
+                                        "position": "absolute",
+                                        "textAlign": "center",
+                                        "textAlignVertical": "bottom",
+                                        "color": "#9900ff",
+                                        "fontStyle": "normal",
+                                        "fontFamily": "serif, times new roman, times, georgia",
+                                        "fontSize": "10vh",
+                                        "text": "${payload.bodyTemplate7Data.text.score}",
+                                        "fontWeight": "300",
+                                        "top": "80%"
+                                    }
+                                ],
                                 "alignSelf": "center",
                                 "position": "absolute"
-                            },
-                            {
-                                "type": "Text",
-                                "textAlign": "center",
-                                "fontStyle": "italic",
-                                "fontSize": "6vw",
-                                "text": "${payload.bodyTemplate7Data.text.drill}",
-                                "fontWeight": "900",
-                                "position": "absolute",
-                                "left": "12vw",
-                                "top": "30vh",
-                                "right": "12vw"
                             }
                         ]
                     }

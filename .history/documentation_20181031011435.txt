@@ -1,1 +1,0 @@
-The card displays all questions questions asked followed by the given answer and the correct answer in brackets.

@@ -1,1 +1,0 @@
-// move the image asstes out of index.js to here

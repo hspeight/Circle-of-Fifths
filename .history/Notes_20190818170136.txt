@@ -1,8 +1,0 @@
-potty slot is type searchquery deliberately to help get the correct productId in BuyPackIntentHandler
-
-Issues
-open circle of fifths for cake - this invocation causes an error
-
-
-Testing
-Test all speech output and reporompts

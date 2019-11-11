@@ -1,3 +1,0 @@
-The card displays all questions questions asked followed by the given answer and the correct answer in brackets.
-T&C example. https://www.opearlo.com/terms-of-use
-Diagram https://www.techros.info/circle-of-fifths-diagram

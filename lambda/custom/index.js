@@ -265,7 +265,6 @@ function askAQuestion(handlerInput) {
     const attributes = handlerInput.attributesManager.getSessionAttributes();
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     let preamble = '';
-    let theQuestion = '';
     attributes.skillState = states.AWAITINGANSWER;
 
     if (attributes.questionNum < QUESTIONS.length) {
@@ -274,6 +273,7 @@ function askAQuestion(handlerInput) {
         }
         attributes.questionNum++;
         speechOutput = requestAttributes.t('THE_QUESTION', preamble, attributes.questionNum, QUESTIONS[attributes.questionNum -1]);
+        //speechOutput.replace('. .', '.'); // pedantic tidy up of string in case preamble is
         //speechOutput = `${preamble}. Question ${attributes.questionNum}. ${QUESTIONS[attributes.questionNum -1]}`; // convert to requestattribute;
     //} else {
     //    speechOutput = "no more questions"; // convert
@@ -601,7 +601,9 @@ const IWantToPlayHandler = {
         const attributes = handlerInput.attributesManager.getSessionAttributes();
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
 
-        if (handlerInput.requestEnvelope.request.intent.slots.packToPlay.resolutions.resolutionsPerAuthority[0].status.code === 'ER_SUCCESS_NO_MATCH') {
+        let pattern = /(en-GB)|(en-US)/; // currently can't do ISP if locale isn't onbe of these
+        if ((handlerInput.requestEnvelope.request.intent.slots.packToPlay.resolutions.resolutionsPerAuthority[0].status.code === 'ER_SUCCESS_NO_MATCH') ||
+        (!handlerInput.requestEnvelope.request.locale.match(pattern))) {
             speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
             repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
             if (supportsAPL(handlerInput)) {
@@ -882,9 +884,10 @@ const OtherIntentHandlers = {
     },
     handle(handlerInput) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+        const attributes = handlerInput.attributesManager.getSessionAttributes();
 
-        speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
-        repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
+        speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('THE_QUESTION', '', attributes.questionNum, QUESTIONS[attributes.questionNum -1]);
+        repromptOutput = speechOutput;
 
         return handlerInput.responseBuilder
             .speak(speechOutput)
