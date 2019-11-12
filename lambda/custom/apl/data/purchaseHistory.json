@@ -12,12 +12,6 @@
                     "size": "small",
                     "widthPixels": 0,
                     "heightPixels": 0
-                },
-                {
-                    "url": "https://d2o906d8ln7ui1.cloudfront.net/images/BT1_Background.png",
-                    "size": "large",
-                    "widthPixels": 0,
-                    "heightPixels": 0
                 }
             ]
         },
@@ -26,9 +20,9 @@
         "textContent": {
             "primaryText": {
                 "type": "PlainText",
-                "text": "You have purchased this <br>nand that"
+                "text": ""
             }
         },
-        "logoUrl": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/COF_small_no_centre_text_54.png"
+        "logoUrl": "https://circle-of-fifths.s3-eu-west-1.amazonaws.com/APP_ICON_SMALL_54.png"
     }
 }

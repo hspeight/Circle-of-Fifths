@@ -4,14 +4,12 @@ exports.setupDrill = function (attributes, userId) {
     const constants = require('../constants');
     const util = require('../utils');
     
-    console.log('AAATTRIBUUTES============================================================================================================================');
-    console.log(attributes);
-
     var levelData = attributes.levelData.data;
     var levelProp = attributes.levelData.key;
 
     if (userId === 'amzn1.ask.account.AEDWVBMTVDH4HMGTUUB2TOY7ZHSVCE3PAGUAIPSSBLCFD3G2F7PY6ZBKWX4MBNWNCVIFYES7EXNTLDPAJMFMEWDCPT5PHJJRC5RWYANCTXW7QRACAV5CF5ZR6IDDYB7ENOBKYSRURAH6FO6NTHEKND55BK3BV6LLQ7FU7Y2DJW6XEECHUPDUKRTH4RXURBCJ53YNYMPVLJV2YJA') {
-        var levelArray = levelData;
+        //var levelArray = levelData;
+        var levelArray = util.shuffleArray(levelData);
     } else {
         var levelArray = util.shuffleArray(levelData);
     }

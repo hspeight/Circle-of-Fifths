@@ -393,15 +393,13 @@ const drills = {
     'perfect-intervals': {
         'name': 'Perfect Intervals',
         'levels': [{
-                'key': 'fifth',
-                'data': ['A FLAT MAJOR']
-            },
-            /*
-            {
                 'key': 'fourth',
-                'data': ['E MAJOR', 'G FLAT MAJOR']
+                'data': ['B FLAT MAJOR', 'F MAJOR', 'C MAJOR', 'G MAJOR', 'D MAJOR']
             },
-            */
+            {
+                'key': 'fifth',
+                'data': ['B FLAT MAJOR', 'F MAJOR', 'C MAJOR', 'G MAJOR', 'D MAJOR']
+            },
             
         ]
     },

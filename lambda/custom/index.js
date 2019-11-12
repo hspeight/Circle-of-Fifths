@@ -15,8 +15,6 @@ const ISPHelp = require('./helpers/ISPHelper');
 const drillSetup = require('./drillSetup/drillSetup');
 const data = require('./apl/data/main.json');
 const template = require('./apl/templates/main.json');
-//const tempNoMatch = require('./apl/templates/no_match.json');
-//const dataNoMatch = require('./apl/data/no_match.json');
 const dataNextQuestion = require('./apl/data/next_question.json');
 const tempNextQuestion = require('./apl/templates/next_question.json');
 const tempUnknownProduct = require('./apl/templates/unknownProduct.json');
@@ -43,23 +41,20 @@ const persistenceAdapter = new DynamoDbPersistenceAdapter({
 });
 
 const freePackRef = constants.freePackRef;
-const freePackName = constants.freePackName;
 
 const states = constants.states;
 const languageStrings = constants.languageStrings;
 const drills = constants.drills;
-var drillLevels = 0;
 
 var QUESTIONS = [];
 var ANSWERS = [];
 
-var lastQuestionAsked = '';
 var speechOutput = '';
 
 /* INTENT HANDLERS */
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
-        console.log('Inside LaunchRequestHandler ++++++++++++++++ + handlerInput.requestEnvelope.request.type=' + handlerInput.requestEnvelope.request.type);
+        console.log('Inside LaunchRequestHandler');
         return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
     },
     async handle(handlerInput) {
@@ -90,9 +85,7 @@ const AnswerHandler = {
             var str = handlerInput.requestEnvelope.request.intent.slots.ANSWER.value.toUpperCase().replace(/[^A-Z ]/g, ''); // Remove anything that's not a alpha or space
         } else {
             var str = handlerInput.requestEnvelope.request.intent.slots.HOWMANY.value;
-            console.log(str);
         }
-        console.log(ANSWERS);
         if (attributes.questionNum === 0) { // going to have problems if questionnum is zero so we're out
             return handlerInput.responseBuilder
                 .speak(requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT'))
@@ -122,6 +115,7 @@ const AnswerHandler = {
                     dataNextQuestion.bodyTemplate7Data.text.question = requestAttributes.t('ASP_END_OF_DRILL', attributes.drillName);
                 default:
                     QUESTIONS[attributes.questionNum - 1];
+                    dataNextQuestion.bodyTemplate7Data.text.question = QUESTIONS[attributes.questionNum - 1];
                     break;
             }
 
@@ -139,7 +133,7 @@ const AnswerHandler = {
         } else {
             return handlerInput.responseBuilder
                 .speak(speechOutput)
-                .reprompt(requestAttributes.t('HELP_MESSAGE_SHORT'))
+                .reprompt(repromptOutput)
                 .getResponse();
         }
 
@@ -209,7 +203,7 @@ const YesIntentHandler = {
             case states.REPLAYLEVEL:
                 return setupLevel(handlerInput);
             case states.ENDOFDRILLWITHUPSELL:
-                return makeUpsell('OK.', attributes.nextProd, handlerInput);  
+                return makeUpsell('OK.', attributes.nextProd, handlerInput);
             default:
                 speechOutput = requestAttributes.t('NO_COMPRENDE');
                 repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
@@ -229,7 +223,7 @@ function getNextQuestion(handlerInput) {
 
     if (attributes.questionNum < QUESTIONS.length) {
         attributes.questionNum++;
-        var retval = requestAttributes.t('NEXT_QUESTION', attributes.questionNum, QUESTIONS[attributes.questionNum -1]);
+        var retval = requestAttributes.t('NEXT_QUESTION', attributes.questionNum, QUESTIONS[attributes.questionNum - 1]);
     } else {
         if (attributes.levelScore !== QUESTIONS.length) { // not all answers were correct
             retval = requestAttributes.t('ASK_REPLAY_LEVEL', attributes.drillName, attributes.currentLevel, attributes.levelScore, QUESTIONS.length);
@@ -239,14 +233,12 @@ function getNextQuestion(handlerInput) {
                 let idx = getRefIndex(attributes.drillStatus, attributes.currentDrillRef);
                 attributes.drillStatus[idx].completed = true;
                 attributes.skillState = states.ENDOFDRILLWITHUPSELL; // time to upsell
-                console.log('2 - attributes.nextProd=' + attributes.nextProd);
                 attributes.nextProd = ISPHelp.getNextPurchasableProduct(attributes.purchasableProducts);
                 if (attributes.nextProd.name === undefined) { // undefined = no more packs to buy
                     retval = retval = requestAttributes.t('END_OF_DRILL_MSG1', attributes.drillName) + requestAttributes.t('WHAT_TO_DO_NEXT');
                 } else {
                     retval = requestAttributes.t('END_OF_DRILL_MSG1', attributes.drillName) + requestAttributes.t('END_OF_DRILL_MSG2', attributes.nextProd.name);
                 }
-                console.log('2 - attributes.nextProd=' + attributes.nextProd);
             } else {
                 attributes.skillState = states.ENDOFLEVEL;
                 let idx = getRefIndex(attributes.drillStatus, attributes.currentDrillRef);
@@ -272,13 +264,9 @@ function askAQuestion(handlerInput) {
             preamble = requestAttributes.t('Q_PREAMBLE', attributes.drillName, attributes.currentLevel);
         }
         attributes.questionNum++;
-        speechOutput = requestAttributes.t('THE_QUESTION', preamble, attributes.questionNum, QUESTIONS[attributes.questionNum -1]);
-        //speechOutput.replace('. .', '.'); // pedantic tidy up of string in case preamble is
-        //speechOutput = `${preamble}. Question ${attributes.questionNum}. ${QUESTIONS[attributes.questionNum -1]}`; // convert to requestattribute;
-    //} else {
-    //    speechOutput = "no more questions"; // convert
+        speechOutput = requestAttributes.t('THE_QUESTION', preamble, attributes.questionNum, QUESTIONS[attributes.questionNum - 1]);
     }
-    repromptOutput = speechOutput;
+    repromptOutput = requestAttributes.t('THE_QUESTION', '', attributes.questionNum, QUESTIONS[attributes.questionNum - 1]);
 
     if (supportsAPL(handlerInput)) {
         dataNextQuestion.bodyTemplate7Data.text.drill = attributes.drillName;
@@ -298,7 +286,7 @@ function askAQuestion(handlerInput) {
     } else {
         return handlerInput.responseBuilder
             .speak(speechOutput)
-            .reprompt(requestAttributes.t('HELP_MESSAGE_SHORT'))
+            .reprompt(repromptOutput)
             .getResponse();
     }
 
@@ -336,7 +324,8 @@ function setupLevel(handlerInput) {
     ANSWERS = QANDA.ANSWERS;
 
     let APLTitle = '';
-    let intro = '<audio src="soundbank://soundlibrary/gameshow/gameshow_02"/>';
+    //let intro = '<audio src="soundbank://soundlibrary/gameshow/gameshow_02"/>';
+    let intro = '<audio src="https://circle-of-fifths.s3-eu-west-1.amazonaws.com/intro_short.mp3"/>';
     if (attributes.launchCount === 1 && attributes.setupLevelCounter === 0) {
         intro += requestAttributes.t('FIRST_TIME', attributes.drillName, attributes.drillLevels); // e.g. perfect intervals, 12 levels;
     } else {
@@ -346,7 +335,7 @@ function setupLevel(handlerInput) {
             intro += requestAttributes.t('WELCOME_BACK_PACK_COMPLETE', attributes.drillName);
             attributes.skillState = states.PACKDONE;
         } else {
-            intro += requestAttributes.t('WELCOME_BACK', attributes.drillName, attributes.currentLevel) + requestAttributes.t('ASK_IF_READY');
+            intro += requestAttributes.t('WELCOME_BACK', attributes.drillName, attributes.currentLevel, attributes.drillLevels) + requestAttributes.t('ASK_IF_READY');
         }
     }
 
@@ -366,6 +355,11 @@ function setupLevel(handlerInput) {
                 document: template,
                 datasources: data
             })
+            .getResponse();
+    } else {
+        return handlerInput.responseBuilder
+            .speak(speechOutput)
+            .reprompt(repromptOutput)
             .getResponse();
     }
 
@@ -416,30 +410,36 @@ function exitSkill(handlerInput) {
     const response = handlerInput.responseBuilder;
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
 
-    speechOutput = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_outro_01"/>' + '<break time="1s"/>' + 
-                    requestAttributes.t('BYE_YALL');
-    response.withShouldEndSession(true);
+    speechOutput = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_outro_01"/>' + '<break time="1s"/>' +
+        requestAttributes.t('BYE_YALL');
+    //response.withShouldEndSession(true);
 
-    // Display rotating circle for devices with displays
-    data.bodyTemplate7Data.video.type = 'outro';
-
-    // if supports screen
-    return handlerInput.responseBuilder
-        .speak(speechOutput)
-        //.reprompt(reprompt)
-        .addDirective({
-            type: 'Alexa.Presentation.APL.RenderDocument',
-            version: '1.1',
-            document: template,
-            datasources: data
-        })
-        .getResponse();
+    if (supportsAPL(handlerInput)) {
+        data.bodyTemplate7Data.video.type = 'outro';
+        data.bodyTemplate7Data.text.packName = 'Goodbye';
+        return handlerInput.responseBuilder
+            .speak(speechOutput)
+            .reprompt(repromptOutput)
+            .withShouldEndSession(true)
+            .addDirective({
+                type: 'Alexa.Presentation.APL.RenderDocument',
+                version: '1.1',
+                document: template,
+                datasources: data
+            })
+            .getResponse();
+    } else {
+        return handlerInput.responseBuilder
+            .speak(speechOutput)
+            .reprompt(repromptOutput)
+            .withShouldEndSession(true)
+            .getResponse();
+    }
 
 }
 
 function makeUpsell(preUpsellMessage, prodToUpsell, handlerInput) {
     console.log('upselling');
-    console.log(prodToUpsell.referenceName);
 
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
     let upsellMessage = `${preUpsellMessage} ${prodToUpsell.summary}. ${requestAttributes.t('RANDOM_LEARN_MORE_PROMPT', prodToUpsell.name)}`;
@@ -465,7 +465,6 @@ const SessionEndedRequestHandler = {
         return handlerInput.requestEnvelope.request.type === 'SessionEndedRequest';
     },
     handle(handlerInput) {
-        console.log(`Session ended with reason: ${JSON.stringify(handlerInput.requestEnvelope)}`);
         return handlerInput.responseBuilder.getResponse();
     },
 };
@@ -477,7 +476,7 @@ const ErrorHandler = {
     },
     handle(handlerInput, error) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-        console.log(error);
+        console.error(error);
         return handlerInput.responseBuilder
             .speak(requestAttributes.t('ERROR_1'))
             .reprompt(requestAttributes.t('ERROR_2'))
@@ -500,11 +499,6 @@ const PurchaseHistoryHandler = {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
         const attributes = handlerInput.attributesManager.getSessionAttributes();
 
-        console.log('OOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
-        console.log(attributes.entitledProducts);
-        console.log(attributes.entitledProducts.length);
-        console.log('OOOOOOOOOOOOOOOOOOOOOOOOOOOOO');
-
         if (attributes.entitledProducts.length > 0) { // please convert to requestattributes
             speechOutput = requestAttributes.t('PACKS_PURCHASED', ISPHelp.getSpeakableListOfProducts(attributes.entitledProducts)) +
                 requestAttributes.t('WHAT_TO_DO_NEXT');
@@ -517,8 +511,7 @@ const PurchaseHistoryHandler = {
 
         if (supportsAPL(handlerInput)) {
             dataPurchaseHistory.bodyTemplate1Data.title = 'Your purchases';
-            dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = ISPHelp.getSpeakableListOfProducts(attributes.entitledProducts).replace(', and','<br>');
-            //console.log('dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text.length=' + dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text.length);
+            dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = ISPHelp.getSpeakableListOfProducts(attributes.entitledProducts).replace(', and', '<br>');
             if (dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text.length === 0) {
                 dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = 'You dont own any products';
                 dataPurchaseHistory.bodyTemplate1Data.hintText = 'Try, Alexa, what can i buy'; // if there are more products available
@@ -557,7 +550,7 @@ const WhatCanIBuyHandler = {
         if (attributes.purchasableProducts.length > 0) { // please convert to requestattributes
             //One or more products are available for purchase. say the list of products
             speechOutput = requestAttributes.t('AVAILABLE_TO_BUY_YES', ISPHelp.getSpeakableListOfProducts(attributes.purchasableProducts)) +
-            requestAttributes.t('WHAT_TO_DO_NEXT');
+                requestAttributes.t('WHAT_TO_DO_NEXT');
             repromptOutput = requestAttributes.t('WHAT_TO_DO_NEXT');
         } else {
             // no products are available for purchase.
@@ -567,7 +560,7 @@ const WhatCanIBuyHandler = {
 
         if (supportsAPL(handlerInput)) {
             dataPurchaseHistory.bodyTemplate1Data.title = 'Products available to buy';
-            dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = ISPHelp.getSpeakableListOfProducts(attributes.purchasableProducts).replace(', and','<br>');
+            dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = ISPHelp.getSpeakableListOfProducts(attributes.purchasableProducts).replace(', and', '<br>');
             dataPurchaseHistory.bodyTemplate1Data.hintText = 'Try, Alexa, what can i play';
             return handlerInput.responseBuilder
                 .speak(speechOutput)
@@ -603,7 +596,7 @@ const IWantToPlayHandler = {
 
         let pattern = /(en-GB)|(en-US)/; // currently can't do ISP if locale isn't onbe of these
         if ((handlerInput.requestEnvelope.request.intent.slots.packToPlay.resolutions.resolutionsPerAuthority[0].status.code === 'ER_SUCCESS_NO_MATCH') ||
-        (!handlerInput.requestEnvelope.request.locale.match(pattern))) {
+            (!handlerInput.requestEnvelope.request.locale.match(pattern))) {
             speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
             repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
             if (supportsAPL(handlerInput)) {
@@ -631,7 +624,7 @@ const IWantToPlayHandler = {
             attributes.currentDrillRef = packRef;
             return setupLevel(handlerInput);
         }
-       
+
         // Let's see if the user is entitled to play the requested pack
         return monetizationClient.getInSkillProducts(locale).then((res) => {
             let packRef = handlerInput.requestEnvelope.request.intent.slots.packToPlay.resolutions.resolutionsPerAuthority[0].values[0].value.id;
@@ -685,7 +678,6 @@ const BuyPackIntentHandler = {
         }
 
         let packRef = handlerInput.requestEnvelope.request.intent.slots.productCategory.resolutions.resolutionsPerAuthority[0].values[0].value.id;
-        console.log('packref=' + packRef + ', freepackref=' + freePackRef);
         if (packRef === freePackRef) {
             // nothing to buy
             attributes.currentDrillRef = packRef;
@@ -753,6 +745,14 @@ const RefundPackIntentHandler = {
         }
 
         return ms.getInSkillProducts(locale).then((res) => {
+            if (!ISPHelp.isEntitled(attributes.entitledProducts, packRef)) { // dont do a sendrequest if the user is not entitled
+                speechOutput = requestAttributes.t('NOT_REFUNDABLE') + requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY');
+                repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
+                return handlerInput.responseBuilder
+                    .speak(speechOutput)
+                    .reprompt(repromptOutput)
+                    .getResponse();
+            }
             const product = res.inSkillProducts.filter(
                 record => record.referenceName === packRef,
             );
@@ -787,7 +787,7 @@ const BuyAndUpsellResponseHandler = {
         const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
         return ms.getInSkillProducts(locale).then(async function handlePurchaseResponse(res) {
-
+            
             if (handlerInput.requestEnvelope.request.status.code === '200') {
                 let speechOutput = "";
                 const attributes = handlerInput.attributesManager.getSessionAttributes();
@@ -817,14 +817,34 @@ const BuyAndUpsellResponseHandler = {
                         repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
                         break;
                 }
-                return handlerInput.responseBuilder
-                    .speak(speechOutput)
-                    .reprompt(repromptOutput)
-                    .getResponse();
+                if (supportsAPL(handlerInput)) {
+                    dataPurchaseHistory.bodyTemplate1Data.title = 'Your purchases';
+                    dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = ISPHelp.getSpeakableListOfProducts(attributes.entitledProducts).replace(', and', '<br>');
+                    dataPurchaseHistory.bodyTemplate1Data.hintText = 'Try, Alexa, what can i play';
+                    if (dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text.length === 0) {
+                        dataPurchaseHistory.bodyTemplate1Data.textContent.primaryText.text = 'You dont own any products';
+                        dataPurchaseHistory.bodyTemplate1Data.hintText = 'Try, Alexa, what can i buy'; // if there are more products available
+                    }
+                    return handlerInput.responseBuilder
+                        .speak(speechOutput)
+                        .reprompt(repromptOutput)
+                        .addDirective({
+                            type: 'Alexa.Presentation.APL.RenderDocument',
+                            version: '1.1',
+                            document: tempPurchaseHistory,
+                            datasources: dataPurchaseHistory
+                        })
+                        .getResponse();
+                } else {
+                    return handlerInput.responseBuilder
+                        .speak(speechOutput)
+                        .reprompt(repromptOutput)
+                        .getResponse();
+                }
             }
 
             // Something failed.
-            console.log(`Connections.Response indicated failure. error: ${handlerInput.requestEnvelope.request.status.message}`);
+            console.error(`Connections.Response indicated failure. error: ${handlerInput.requestEnvelope.request.status.message}`);
 
             return handlerInput.responseBuilder
                 .speak(requestAttributes.t('BUY_AND_UPSELL_ERROR'))
@@ -863,9 +883,7 @@ const TellMeMoreAboutPackIntentHandler = {
         }
         return monetizationClient.getInSkillProducts(locale).then((res) => {
             let product = res.inSkillProducts.filter(record => record.referenceName === packRef); //filter the reference name
-            console.log('attributes.nextProd=' + attributes.nextProd);
             attributes.nextProd = ISPHelp.getNextPurchasableProduct(attributes.purchasableProducts);
-            console.log('attributes.nextProd=' + attributes.nextProd);
             return makeUpsell(requestAttributes.t('AFFERMATIVE_RESPONSE'), product[0], handlerInput);
 
         });
@@ -886,7 +904,7 @@ const OtherIntentHandlers = {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
         const attributes = handlerInput.attributesManager.getSessionAttributes();
 
-        speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('THE_QUESTION', '', attributes.questionNum, QUESTIONS[attributes.questionNum -1]);
+        speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('THE_QUESTION', '', attributes.questionNum, QUESTIONS[attributes.questionNum - 1]);
         repromptOutput = speechOutput;
 
         return handlerInput.responseBuilder
@@ -900,22 +918,20 @@ const OtherIntentHandlers = {
 const FallbackHandler = {
     canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
-        //console.log('Inside FallbackHandler and intent is ' + request.intent.name);
         return request.type === 'IntentRequest' &&
             request.intent.name === 'AMAZON.FallbackIntent';
     },
     handle(handlerInput) {
         console.log('Handling FallbackHandler');
         const attributes = handlerInput.attributesManager.getSessionAttributes();
-        console.log('FallbackHandler attributes.skillState=' + attributes.skillState);
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
 
         switch (attributes.skillState) {
             case states.AWAITINGANSWER:
-                    speechOutput = requestAttributes.t('NO_COMPRENDE') + 
-                                    requestAttributes.t('THE_QUESTION', '', attributes.questionNum, QUESTIONS[attributes.questionNum -1]);
-                    repromptOutput = speechOutput;
-                    break;
+                speechOutput = requestAttributes.t('NO_COMPRENDE') +
+                    requestAttributes.t('THE_QUESTION', '', attributes.questionNum, QUESTIONS[attributes.questionNum - 1]);
+                repromptOutput = speechOutput;
+                break;
             default:
                 speechOutput = requestAttributes.t('NO_COMPRENDE') + requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
                 repromptOutput = requestAttributes.t('WHAT_CAN_I_PLAY_OR_BUY_REPROMPT');
@@ -984,13 +1000,12 @@ const loadISPDataInterceptor = {
                 const result = await ms.getInSkillProducts(locale);
                 const entitledProducts = ISPHelp.getAllEntitledProducts(result.inSkillProducts);
                 const purchasableProducts = ISPHelp.getAllpurchasableProducts(result.inSkillProducts);
-                console.log(purchasableProducts);
                 const sessionAttributes = handlerInput.attributesManager.getSessionAttributes();
                 sessionAttributes.entitledProducts = entitledProducts;
                 sessionAttributes.purchasableProducts = purchasableProducts;
                 handlerInput.attributesManager.setSessionAttributes(sessionAttributes);
             } catch (error) {
-                console.log(`Error calling InSkillProducts API: ${error}`);
+                console.error(`Error calling InSkillProducts API: ${error}`);
             }
         }
     },
@@ -1094,11 +1109,11 @@ function getRefIndex(drillstatus, drillref) {
 
 
 // ********************* LOG INTERCEPTORS ********************
-const LogRequestInterceptor = {
-    process(handlerInput) {
-        console.log(`REQUEST ENVELOPE = ${JSON.stringify(handlerInput.requestEnvelope)}`);
-    },
-};
+//const LogRequestInterceptor = {
+//    process(handlerInput) {
+//        console.log(`REQUEST ENVELOPE = ${JSON.stringify(handlerInput.requestEnvelope)}`);
+//    },
+//};
 const LogResponseInterceptor = {
     process(handlerInput) {
         console.log("=============================== START LOG REQUEST =======================================");

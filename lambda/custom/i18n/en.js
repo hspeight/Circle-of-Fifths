@@ -23,7 +23,7 @@ module.exports = {
             'Level %s of %s - Question %s '
         ],
         'WELCOME_BACK' : [
-            'This is the %s drill, and you are on level %s. ',
+            'This is the %s drill, and you are on level %s of %s. ',
         ],
         'ASP_END_OF_LEVEL' : [
             'LEVEL COMPLETE'
@@ -105,7 +105,7 @@ module.exports = {
             'Are you ready for the next level?'
         ],
         'END_OF_DRILL_MSG1' : [
-            'You have completed all levels of the %s drill. '
+            'Congratulations, you have completed all levels of the %s drill. '
         ],
         'END_OF_DRILL_MSG2' : [
             'Would you like to hear about the next drill which is called %s?'
@@ -114,7 +114,7 @@ module.exports = {
             'You have completed all available drills. What would you like to do next? You can say, what can I play, to see what is available?'
         ],
         'PACK_DECLINED_MSG2': [
-            'You can purchase the pack at any time by saying, <emphasis level="strong">buy</emphasis> %s pack. ' +
+            'You can purchase the pack at any time by saying, <emphasis level="strong">buy</emphasis> %s. ' +
                     'What would you like to do next? You can say, what can I play, to see what is available. ',
         ],
         'PACK_DECLINED_MSG1' : [
@@ -159,7 +159,7 @@ module.exports = {
             '%s, level %s '
         ],
         'THE_QUESTION': [
-            '%s. Question %s. %s. '
+            '%s, Question %s. %s. '
         ],
         'RANDOM_LEARN_MORE_PROMPT' : [
             'Would you like to learn more about the %s pack?',
@@ -167,7 +167,8 @@ module.exports = {
 		    'Do you want to learn more about the %s pack?',
         ],
         'NO_PRODUCTS_OWNED' : [
-            'You don\'t own any additional packs for this skill yet. You can continue to play the perfect intervals pack for as long as you like. ',
+            'You don\'t own any additional packs for ' + SKILLNAME + ' yet. ' +
+                '       You can continue to play the perfect intervals pack for as long as you like. ',
         ],
         'WHAT_CAN_I_BUY': [
             'To learn more about the packs you can buy, say - what can I buy. ',

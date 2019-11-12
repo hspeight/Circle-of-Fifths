@@ -1,0 +1,10 @@
+1. Play from start answer some incorrectly
+2. Answer all correctly
+3. Ask what can i play
+4. Ask what can i buy
+5. Tell me more about
+6. Ask what do i own
+7. Buy perfect intervals
+8. Request a refund
+9. Ask for help
+
